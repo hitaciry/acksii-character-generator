@@ -1,0 +1,158 @@
+{
+  "className": "Mage",
+  "keyAttribute": "INT",
+  "requirements": "None",
+  "hitDice": "1d4",
+  "maximumLevel": 14,
+  "description": "Sometimes called wizards, sorcerers, or magicians, mages study arcane secrets and cast spells. While early in their career mages have only limited power, experienced mages are able to cast a great number of powerful spells. In the Auran Empire, a mage might be a wizard steeped in the lore of the Tower of Knowledge, a sinister sorcerer of Kemesh or the Sunset Kingdoms, or a hedge wizard with strange charms and hodge-podge traditions.",
+
+  "combatCharacteristics": {
+    "combatProficiencies": "Mages have weapon proficiency with clubs, daggers, darts, and staffs. They have no armor proficiency.",
+    "combatProgression": "Mages advance in attack throws and saving throws by only two points every six levels of experience. They do not gain any bonus to damage as they advance in level."
+  },
+
+  "levelProgression": [
+    {
+      "level": 1,
+      "title": "Arcanist",
+      "experience": 0,
+      "hitDice": "1d4",
+      "damageBonus": "0",
+      "abilities": [
+        {
+          "name": "Arcane Magic",
+          "description": "Mages can learn and cast powerful arcane spells based on their level and intelligence."
+        },
+        {
+          "name": "Starting Equipment",
+          "description": "A mage starts with a spellbook and a dagger."
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Seer",
+      "experience": 2500,
+      "hitDice": "2d4",
+      "damageBonus": "0",
+      "abilities": [
+        {
+          "name": "Spell Progression",
+          "description": "Mages gain additional spell slots as they increase in level."
+        },
+        {
+          "name": "Additional Proficiency",
+          "description": "Gain an additional class proficiency."
+        }
+      ]
+    }
+  ],
+
+  "classPowers": {
+    "startingClassPowers": [
+      {
+        "powerName": "Collegiate Wizardry",
+        "description": "The mage has received arcane instruction as an apprentice to a mage or as a member of an arcane organization."
+      }
+    ],
+    "additionalClassPowers": [
+      {
+        "level": 5,
+        "powerName": "Minor Magical Research",
+        "description": "The mage can research spells, scribe magical scrolls, and brew potions."
+      },
+      {
+        "level": 9,
+        "powerName": "Sanctum",
+        "description": "By acquiring a sanctum worth at least 15,000gp, the mage can attract followers."
+      }
+    ]
+  },
+
+  "proficiencies": {
+    "mageProficiencyList": [
+      "Alchemy",
+      "Battle Magic",
+      "Beast Friendship",
+      "Black Lore of Zahar",
+      "Bright Lore of Aura",
+      "Counterspelling",
+      "Diplomacy",
+      "Elementalism",
+      "Engineering",
+      "Expanded Repertoire",
+      "Familiar",
+      "Healing",
+      "Illusion Resistance",
+      "Knowledge",
+      "Language",
+      "Loremastery",
+      "Magical Engineering",
+      "Mastery of Enchantments & Illusions",
+      "Mastery of Conjuration & Summoning",
+      "Mystic Aura",
+      "Quiet Magic",
+      "Sensing Power",
+      "Soothsaying",
+      "Transmogrification",
+      "Unflappable Casting"
+    ]
+  },
+
+  "mageAttackAndSavingThrows": [
+    {
+      "level": 1,
+      "paralysis": "13+",
+      "death": "13+",
+      "blast": "13+",
+      "implements": "14+",
+      "spells": "15+",
+      "attackThrow": "10+"
+    },
+    {
+      "level": 2,
+      "paralysis": "12+",
+      "death": "12+",
+      "blast": "12+",
+      "implements": "13+",
+      "spells": "14+",
+      "attackThrow": "9+"
+    }
+  ],
+
+  "mageTemplates": [
+    {
+      "rollTemplate": "3d6",
+      "proficiencies": ["Mastery of Enchantments & Illusions", "Healing"],
+      "startingEquipment": [
+        "Musty old spellbook with beguile humanoid and auditory illusion",
+        "Gnarled oaken staff",
+        "Simple robe",
+        "Leather shoes",
+        "Medicine bag",
+        "1 lb comfrey",
+        "Waterskin",
+        "1 week’s iron rations",
+        "1gp",
+        "8sp",
+        "(enc. 3 st)"
+      ]
+    },
+    {
+      "rollTemplate": "5 - 6",
+      "proficiencies": ["Black Lore of Zahar", "Alchemy"],
+      "startingEquipment": [
+        "Iron-bound snakeskin spellbook with unliving puppet and faithful companion",
+        "Curved sacrificial dagger",
+        "Grey robes",
+        "Leather belt",
+        "Leather gloves",
+        "High boots",
+        "Backpack",
+        "2 weeks’ iron rations",
+        "19gp",
+        "(enc. 2 2/6 st)"
+      ]
+    }
+  ]
+}

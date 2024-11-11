@@ -1,0 +1,147 @@
+{
+  "className": "Thief",
+  "keyAttribute": "DEX",
+  "requirements": "None",
+  "hitDice": "1d4",
+  "maximumLevel": 14,
+  "description": "Where other classes rely on their valor in battle or power with magic, thieves rely on cunning, stealth, and subterfuge. Sometimes a thief will belong to an organized criminal syndicate from the character’s local town, where he can seek shelter and information between adventures. However, many adventuring thieves are independent of any guild, and some even refuse to call themselves thieves at all — preferring terms such as expert treasure hunter, gentleman adventurer, or dungeoneer. In the Auran Empire, thieves are everywhere, from the slums of the ports of Kushtu to the highest halls of the Senate in Aura.",
+
+  "combatProficiencies": "Thieves have weapon proficiency with all missile weapons and with all tiny, small, and medium melee weapons. They have armor proficiency with light and very light armor. They have fighting style proficiency with the dual weapon and two-handed weapon styles, but not with the weapon and shield style.",
+  "combatProgression": "Thieves advance in attack throws and saving throws by two points every four levels of experience. They do not gain any bonus to damage as they advance in level. They can cleave after killing a foe a maximum of once per round per every two class levels (rounded down).",
+
+  "levelProgression": [
+    {
+      "level": 1,
+      "title": "Footpad",
+      "experience": 0,
+      "hitDice": "1d4",
+      "damageBonus": "+1"
+    },
+    {
+      "level": 2,
+      "title": "Hood",
+      "experience": 1250,
+      "hitDice": "2d4",
+      "damageBonus": "+1"
+    }
+  ],
+
+  "classPowers": {
+    "startingClassPowers": [
+      {
+        "powerName": "Backstabbing",
+        "description": "Thieves are skilled at treacherously attacking unprepared enemies. A thief can backstab any vulnerable opponent, gaining a +4 bonus to hit and dealing an extra die of damage on successful attacks."
+      },
+      {
+        "powerName": "Climbing",
+        "description": "Thieves can scale sheer surfaces with proficiency. They must make a Climbing proficiency throw for each 100’ climbed."
+      }
+    ],
+    "additionalClassPowers": [
+      {
+        "level": 5,
+        "powerName": "Deciphering",
+        "description": "The thief gains the ability to decipher text, including ciphers, treasure maps, and dead languages."
+      },
+      {
+        "level": 9,
+        "powerName": "Hideout",
+        "description": "Acquire a hideout worth at least 5,000gp to attract followers."
+      }
+    ]
+  },
+
+  "proficiencies": {
+    "thiefProficiencyList": [
+      "Acrobatics",
+      "Alertness",
+      "Arcane Dabbling",
+      "Bribery",
+      "Cat Burglary",
+      "Combat Reflexes",
+      "Combat Trickery",
+      "Contortionism",
+      "Fighting Style Specialization",
+      "Gambling",
+      "Intimidation",
+      "Lip Reading",
+      "Lockpicking Expertise",
+      "Mapping",
+      "Poisoning",
+      "Precise Shooting",
+      "Riding",
+      "Running",
+      "Seafaring",
+      "Skirmishing",
+      "Sniping",
+      "Swashbuckling",
+      "Trapping",
+      "Weapon Finesse",
+      "Weapon Focus"
+    ]
+  },
+
+  "thiefAttackAndSavingThrows": [
+    {
+      "level": 1,
+      "paralysis": "13+",
+      "death": "13+",
+      "blast": "13+",
+      "implements": "14+",
+      "spells": "15+",
+      "attackThrow": "10+"
+    },
+    {
+      "level": 2,
+      "paralysis": "12+",
+      "death": "12+",
+      "blast": "12+",
+      "implements": "13+",
+      "spells": "14+",
+      "attackThrow": "9+"
+    }
+  ],
+
+  "thiefTemplates": [
+    {
+      "rollTemplate": "3d6",
+      "proficiencies": ["Skulking", "Survival"],
+      "startingEquipment": [
+        "Handmade short bow",
+        "Quiver with 20 arrows",
+        "Short sword",
+        "Leather armor",
+        "Tattered cloak",
+        "Old freeholder’s tunic and pants",
+        "Embossed belt",
+        "Well-worn low boots",
+        "Backpack",
+        "50’ rope",
+        "Waterskin",
+        "1 week’s iron rations",
+        "1gp",
+        "(enc. 4 5/6 st)"
+      ]
+    },
+    {
+      "rollTemplate": "5 - 6",
+      "proficiencies": ["Acrobatics", "Endurance"],
+      "startingEquipment": [
+        "Bola",
+        "Quarterstaff",
+        "Supple leather armor",
+        "Cloak",
+        "Tunic and pants",
+        "Embossed belt",
+        "Low boots",
+        "Backpack",
+        "50’ rope",
+        "Grappling hook",
+        "Waterskin",
+        "1 week’s iron rations",
+        "1gp",
+        "(enc. 5 4/6 st)"
+      ]
+    }
+  ]
+}

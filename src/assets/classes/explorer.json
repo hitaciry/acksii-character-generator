@@ -1,0 +1,121 @@
+{
+  "className": "Explorer",
+  "keyAttribute": "CON",
+  "requirements": "None",
+  "hitDice": "1d6",
+  "maximumLevel": 14,
+  "description": "Explorers are scouts, settlers, and surveyors hardened to the challenges of the wild. Few adventuring parties would dare the wilderness without an experienced explorer to guide them.",
+
+  "combatCharacteristics": {
+    "combatProficiencies": "Explorers have weapon proficiency with all missile weapons and with all tiny, small, and medium melee weapons. They have armor proficiency with medium, light, and very light armor.",
+    "combatProgression": "Like fighters, explorers advance in attack throws and saving throws by two points every three levels of experience."
+  },
+
+  "levelProgression": [
+    {
+      "level": 1,
+      "title": "Scout",
+      "experience": 0,
+      "hitDice": "1d6",
+      "damageBonus": "+1",
+      "abilities": [
+        {
+          "name": "Combat Proficiency",
+          "description": "Select one class proficiency from the explorer's proficiency list."
+        },
+        {
+          "name": "Starting Equipment",
+          "description": "An explorer starts with a short bow and an old spear."
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "title": "Outrider",
+      "experience": 2000,
+      "hitDice": "2d6",
+      "damageBonus": "+1",
+      "abilities": [
+        {
+          "name": "Combat Progression",
+          "description": "Explorers advance in attack throws and saving throws."
+        },
+        {
+          "name": "Additional Proficiency",
+          "description": "Gain an additional class proficiency."
+        }
+      ]
+    }
+  ],
+
+  "classPowers": {
+    "startingClassPowers": [
+      {
+        "powerName": "Alertness",
+        "description": "Explorers gain a +1 bonus to avoid surprise. When using Adventuring proficiency to search or listen, he succeeds on a proficiency throw of 14+."
+      },
+      {
+        "powerName": "Ambushing",
+        "description": "Explorers can ambush any vulnerable opponent, getting a +4 bonus on attack throws and dealing an extra die of damage."
+      },
+      {
+        "powerName": "Animal Reflexes",
+        "description": "Explorers gain a +1 bonus to initiative and avoid surprise."
+      }
+    ]
+  },
+
+  "proficiencies": {
+    "explorerProficiencyList": [
+      "Beast Friendship",
+      "Climbing",
+      "Combat Ferocity",
+      "Combat Reflexes",
+      "Combat Trickery",
+      "Driving",
+      "Eavesdropping",
+      "Elven Bloodline",
+      "Fighting Style Specialization",
+      "Illusion Resistance",
+      "Land Surveying",
+      "Mapping",
+      "Mountaineering",
+      "Mounted Combat",
+      "Naturalism",
+      "Navigation",
+      "Passing Without Trace",
+      "Precise Shooting",
+      "Prospecting",
+      "Riding",
+      "Running",
+      "Seafaring",
+      "Skirmishing",
+      "Sniping",
+      "Swashbuckling",
+      "Trapping",
+      "Weapon Finesse",
+      "Weapon Focus"
+    ]
+  },
+
+  "explorerAttackAndSavingThrows": [
+    {
+      "level": 1,
+      "paralysis": "13+",
+      "death": "14+",
+      "blast": "15+",
+      "implements": "16+",
+      "spells": "17+",
+      "attackThrow": "10+"
+    },
+    {
+      "level": 2,
+      "paralysis": "12+",
+      "death": "13+",
+      "blast": "14+",
+      "implements": "15+",
+      "spells": "16+",
+      "attackThrow": "9+"
+    }
+  ]
+}

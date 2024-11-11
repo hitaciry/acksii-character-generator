@@ -1,0 +1,2713 @@
+{
+  "fighter": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Thug",
+        "proficiencies": ["Combat Ferocity", "Intimidation"],
+        "startingEquipment": {
+          "weapons": ["Short bow", "quiver with 20 arrows", "morning star"],
+          "armor": ["scarred leather armor"],
+          "clothing": ["wool tunic and pants", "embossed belt", "low boots"],
+          "misc": ["backpack", "waterskin", "1 week’s iron rations"],
+          "money": "",
+          "encumberance": "4 4/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Ravager",
+        "proficiencies": ["Berserkergang", "Endurance"],
+        "startingEquipment": {
+          "weapons": ["Long bearded axe", "francisca"],
+          "armor": ["chain mail armor"],
+          "clothing": [
+            "thick wool cloak",
+            "wool tunic and pants",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "belt pouch",
+            "small sack",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumberance": "6 4/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Corsair",
+        "proficiencies": ["Swashbuckling", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "scimitar",
+            "2 well-balanced daggers with boot-sheathes"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "colorful tunic and pants",
+            "silk girdle",
+            "leather duelist’s gloves",
+            "high boots"
+          ],
+          "misc": [
+            "small sack",
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "4gp",
+          "encumberance": "5 3/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Auxiliary",
+        "proficiencies": ["Skirmishing", "Labor (construction)"],
+        "startingEquipment": {
+          "weapons": ["3 javelins", "short sword"],
+          "armor": ["wooden shield", "chain mail armor"],
+          "clothing": [
+            "armiger’s tunic and pants",
+            "embossed belt",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "laborer’s tools",
+            "mess kit",
+            "flask of military oil",
+            "tinderbox",
+            "1 week’s iron rations"
+          ],
+          "money": "10gp",
+          "encumberance": "8 3/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Legionary",
+        "proficiencies": [
+          "Fighting Style Spec. (weapon & shield)",
+          "Siege Engineering"
+        ],
+        "startingEquipment": {
+          "weapons": ["Military-issue spear", "short sword"],
+          "armor": [
+            "steel shield re-painted many times",
+            "slightly battered banded plate armor"
+          ],
+          "clothing": [
+            "armiger’s tunic and pants",
+            "embossed belt",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "laborer’s tools",
+            "mess kit",
+            "flask of military oil",
+            "tinderbox",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "20gp",
+          "encumberance": "10 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Gladiator",
+        "proficiencies": ["Weapon Focus (swords and daggers)", "Seduction"],
+        "startingEquipment": {
+          "weapons": ["2 swords"],
+          "armor": [
+            "heavy arena armor",
+            "plumed heavy helmet with visor and crest"
+          ],
+          "clothing": ["armiger’s tunic and pants", "sandals"],
+          "misc": [
+            "small sack",
+            "amphora of oil (for polishing body)",
+            "1 week’s iron rations"
+          ],
+          "money": "38gp in arena winnings",
+          "encumberance": "6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Signifer",
+        "proficiencies": ["Command", "Manual of Arms 2"],
+        "startingEquipment": {
+          "weapons": ["Military-issue spear", "sword"],
+          "armor": [
+            "steel shield bearing Imperial eagle",
+            "banded plate armor"
+          ],
+          "clothing": [
+            "banner flag bearing winged sun",
+            "armiger’s tunic and pants",
+            "low boots",
+            "short gloves"
+          ],
+          "misc": [
+            "backpack",
+            "mess kit",
+            "tinderbox",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "57gp in back pay",
+          "encumberance": "9 5/6 st, or 8 5/6 st without banner"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Cataphract",
+        "proficiencies": ["Mounted Combat", "Military Strategy"],
+        "startingEquipment": {
+          "weapons": [
+            "Composite bow",
+            "quiver with 20 arrows",
+            "polished sword"
+          ],
+          "armor": [
+            "steel shield bearing noble house’s crest",
+            "lamellar armor"
+          ],
+          "clothing": ["armiger’s tunic and pants", "high boots"],
+          "misc": [
+            "medium riding horse",
+            "riding saddle and tack",
+            "saddlebag",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "2gp",
+          "encumberance": "7 2/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "explorer": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Wanderer",
+        "proficiencies": ["Running", "Labor (construction)"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "old spear",
+            "hand axe"
+          ],
+          "armor": ["battered leather armor"],
+          "clothing": [
+            "deep cowled traveler’s cloak",
+            "wool tunic and pants",
+            "leather belt",
+            "well-worn high boots"
+          ],
+          "misc": [
+            "backpack",
+            "tinderbox",
+            "6 torches",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "",
+          "encumberance": "7 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Cartographer",
+        "proficiencies": ["Land Surveying", "Mapping"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "spear",
+            "hand axe"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "hooded cloak",
+            "wool tunic and pants",
+            "embossed belt",
+            "sturdy low boots"
+          ],
+          "misc": [
+            "backpack",
+            "tattered cartographic journal",
+            "quill and ink",
+            "tinderbox",
+            "12 torches",
+            "2 weeks’ iron rations"
+          ],
+          "money": "6gp",
+          "encumberance": "8 2/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Mariner",
+        "proficiencies": ["Swashbuckling", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "scimitar",
+            "dagger"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "mariner’s tunic and pants",
+            "fancy red sash",
+            "polished high boots"
+          ],
+          "misc": [
+            "backpack",
+            "50’ rope",
+            "grappling hook",
+            "tinderbox",
+            "12 torches",
+            "wineskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "4gp",
+          "encumberance": "8 2/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Pathfinder",
+        "proficiencies": ["Precise Shooting", "Tracking"],
+        "startingEquipment": {
+          "weapons": [
+            "Sturdy long bow",
+            "quiver with 20 arrows",
+            "spear",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["scale armor"],
+          "clothing": [
+            "wind-battered fur cloak",
+            "wool tunic and pants",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "lantern",
+            "tinderbox",
+            "1 flask of common oil",
+            "blanket",
+            "50’ rope",
+            "12 iron spikes",
+            "small hammer",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumberance": "9 5/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Mountaineer",
+        "proficiencies": ["Climbing", "Mountaineering"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 30 bolts",
+            "net",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["chainmail armor"],
+          "clothing": [
+            "hooded cloak",
+            "dark tunic and pants",
+            "low hiking boots"
+          ],
+          "misc": [
+            "backpack",
+            "small sack",
+            "4 stakes and mallet",
+            "6 iron spikes",
+            "50’ rope",
+            "2 flasks of military oil",
+            "tinderbox",
+            "6 torches",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "12gp",
+          "encumberance": "10 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Scout",
+        "proficiencies": ["Passing without Trace", "Survival"],
+        "startingEquipment": {
+          "weapons": [
+            "Composite bow",
+            "quiver with 20 arrows",
+            "2 short swords"
+          ],
+          "armor": ["chain mail armor"],
+          "clothing": [
+            "grey-green traveler’s cloak",
+            "wool tunic and pants",
+            "leather belt",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "50’ rope",
+            "grappling hook",
+            "tinderbox",
+            "6 torches",
+            "1 week’s iron rations"
+          ],
+          "money": "11gp",
+          "encumberance": "9 1/6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Monster Hunter",
+        "proficiencies": ["Skirmishing", "Trapping"],
+        "startingEquipment": {
+          "weapons": [
+            "Shortbow",
+            "quiver with 20 arrows",
+            "spear",
+            "short sword",
+            "net"
+          ],
+          "armor": ["chain mail armor"],
+          "clothing": [
+            "hunter green cloak, tunic, and pants",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "2 lbs garlic",
+            "2 lbs wolfsbane",
+            "2 vials of holy water",
+            "50’ rope",
+            "6 torches",
+            "tinderbox",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "19gp",
+          "encumberance": "10 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Outrider",
+        "proficiencies": ["Mounted Combat", "Riding"],
+        "startingEquipment": {
+          "weapons": ["Composite bow", "quiver with 20 arrows", "scimitar"],
+          "armor": ["scale armor"],
+          "clothing": ["traveler’s tunic and pants", "riding boots"],
+          "misc": [
+            "light riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumberance": "4 1/3 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "thief": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Outlaw",
+        "proficiencies": ["Skulking", "Survival"],
+        "startingEquipment": {
+          "weapons": [
+            "Handmade short bow",
+            "quiver with 20 arrows",
+            "short sword"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "tattered cloak",
+            "old freeholder’s tunic and pants",
+            "embossed belt",
+            "well-worn low boots"
+          ],
+          "misc": [
+            "backpack",
+            "50’ rope",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp",
+          "encumberance": "4 5/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Thief-Acrobat",
+        "proficiencies": ["Acrobatics", "Endurance"],
+        "startingEquipment": {
+          "weapons": ["Bola", "quarterstaff"],
+          "armor": ["supple leather armor"],
+          "clothing": [
+            "cloak",
+            "tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp",
+          "encumberance": "5 4/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Buccaneer",
+        "proficiencies": ["Swashbuckling", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "scimitar",
+            "well-balanced dagger with boot-sheath"
+          ],
+          "armor": ["leather armor"],
+          "clothing": ["colorful tunic and pants", "fancy sash", "high boots"],
+          "misc": [
+            "belt pouch",
+            "small sack",
+            "50’ rope",
+            "thieves’ tools",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "7gp",
+          "encumberance": "5 2/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Tomb Raider",
+        "proficiencies": ["Trapfinding", "Mapping"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "10’ pole",
+            "short sword",
+            "throwing dagger"
+          ],
+          "armor": ["sturdy leather armor"],
+          "clothing": [
+            "tanned brown cloak",
+            "thick tunic and pants",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "2 large treasure sacks",
+            "thieves’ tools",
+            "50’ rope",
+            "tinderbox",
+            "lantern",
+            "small hammer",
+            "12 iron spikes",
+            "2 flasks of common oil",
+            "2 flasks of military oil",
+            "wineskin",
+            "1 week’s iron rations"
+          ],
+          "money": "4gp",
+          "encumberance": "8 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Cat Burglar",
+        "proficiencies": ["Cat Burglary", "Gambling"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "short sword",
+            "2 throwing daggers"
+          ],
+          "armor": ["supple leather armor"],
+          "clothing": [
+            "black cloak with hood and bandana",
+            "black tunic and pants",
+            "leather belt",
+            "padded sandals"
+          ],
+          "misc": [
+            "backpack",
+            "large treasure sack",
+            "thieves’ tools",
+            "crowbar",
+            "50’ rope",
+            "grappling hook",
+            "lantern",
+            "tinderbox",
+            "2 flasks of common oil",
+            "small hammer",
+            "12 iron spikes",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumberance": "7 5/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Lockbreaker",
+        "proficiencies": ["Lockpicking Expertise", "Craft (locksmithing)"],
+        "startingEquipment": {
+          "weapons": ["Crossbow", "case with 20 bolts", "short sword"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "hooded cloak",
+            "freeholder’s tunic and pants",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "thieves’ tools",
+            "50’ rope",
+            "grappling hook",
+            "tinderbox",
+            "lantern",
+            "flask of common oil",
+            "small hammer",
+            "12 iron spikes",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumberance": "6 1/6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Failed Apprentice",
+        "proficiencies": ["Arcane Dabbling", "Collegiate Wizardry"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "quarterstaff",
+            "2 throwing daggers"
+          ],
+          "armor": ["leather armor under blue mage’s cassock"],
+          "clothing": ["high boots"],
+          "misc": [
+            "backpack",
+            "belt pouch",
+            "thieves’ tools",
+            "50’ rope",
+            "spellbook (blank)",
+            "lantern",
+            "tinderbox",
+            "4 flasks of military oil",
+            "2 flasks of common oil",
+            "small hammer",
+            "12 iron spikes",
+            "1 lb garlic",
+            "1 lb wolfsbane",
+            "wineskin",
+            "1 week’s iron rations"
+          ],
+          "money": "12gp",
+          "encumberance": "9 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Traveler",
+        "proficiencies": ["Skirmishing", "Riding"],
+        "startingEquipment": {
+          "weapons": ["Crossbow", "case with 20 bolts", "short sword"],
+          "armor": ["leather armor"],
+          "clothing": ["traveler’s tunic and pants", "riding boots"],
+          "misc": [
+            "light riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "thieves’ tools",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumberance": "2 5/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "mage": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Hedge Wizard",
+        "proficiencies": [
+          "Mastery of Enchant. & Illusions",
+          "Healing",
+          "Survival"
+        ],
+        "startingEquipment": {
+          "weapons": ["gnarled oaken staff"],
+          "armor": [],
+          "clothing": ["simple robe", "leather shoes"],
+          "misc": [
+            "musty old spellbook with beguile humanoid and auditory illusion",
+            "medicine bag",
+            "1 lb comfrey",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp, 8sp",
+          "encumberance": "3 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Necromancer",
+        "proficiencies": ["Black Lore of Zahar", "Alchemy", "Healing"],
+        "startingEquipment": {
+          "weapons": ["curved sacrificial dagger"],
+          "armor": [],
+          "clothing": [
+            "grey robes",
+            "leather belt",
+            "leather gloves",
+            "high boots"
+          ],
+          "misc": [
+            "iron-bound snakeskin spellbook with unliving puppet and faithful companion",
+            "backpack",
+            "belt pouch",
+            "quill and ink",
+            "2 weeks’ iron rations"
+          ],
+          "money": "19gp",
+          "encumberance": "2 2/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Occultist",
+        "proficiencies": [
+          "Mastery of Conj. & Summoning",
+          "Knowledge (occult)",
+          "Theology"
+        ],
+        "startingEquipment": {
+          "weapons": ["wavy-bladed dagger"],
+          "armor": [],
+          "clothing": [
+            "black and gold robes",
+            "polished iron skullcap",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "rolled papyrus spellbook with conjure cacodemon spawn and summon manes",
+            "backpack",
+            "quill and ink",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "56gp",
+          "encumberance": "3 1/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Elementalist",
+        "proficiencies": ["Elementalism (fire)*", "Naturalism", "Alchemy"],
+        "startingEquipment": {
+          "weapons": ["gnarled oaken quarterstaff", "5 darts"],
+          "armor": [],
+          "clothing": [
+            "four-colored cassock with hood",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "wood-paneled spellbook with fan of flames and blinding flash",
+            "backpack",
+            "quill and ink",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "60gp",
+          "encumberance": "3 1/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Classicist",
+        "proficiencies": [
+          "Loremastery",
+          "Knowledge (history)",
+          "Military Strategy"
+        ],
+        "startingEquipment": {
+          "weapons": ["rune-etched staff"],
+          "armor": [],
+          "clothing": ["blue mage’s cassock", "embossed belt", "low boots"],
+          "misc": [
+            "well-kept spellbook with mage missile and illumination",
+            "backpack",
+            "quill and ink",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "82gp",
+          "encumberance": "3 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Warmage",
+        "proficiencies": [
+          "Battle Magic",
+          "Military Strategy",
+          "Siege Engineering"
+        ],
+        "startingEquipment": {
+          "weapons": ["iron-shod staff", "officer’s dagger"],
+          "armor": [],
+          "clothing": ["red armiger’s tunic and pants", "high boots"],
+          "misc": [
+            "academy-issue spellbook with earth’s excrescence and slicing blow",
+            "backpack",
+            "quill and ink",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "94gp",
+          "encumberance": "3 1/6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Polymath",
+        "proficiencies": ["Expanded Repertoire", "Naturalism", "Language"],
+        "startingEquipment": {
+          "weapons": ["smooth-worn staff"],
+          "armor": [],
+          "clothing": ["blue robe with crescents", "leather belt", "low boots"],
+          "misc": [
+            "enameled spellbook with infuriate humanoid, discern magic, and one spell of character’s choice",
+            "backpack",
+            "ornamental crystal ball (20gp value)",
+            "quill and ink",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "102gp",
+          "encumberance": "3 1/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Noble Magist",
+        "proficiencies": ["Bright Lore of Aura", "Diplomacy", "Leadership"],
+        "startingEquipment": {
+          "weapons": [
+            "quarterstaff tipped with glass gemstone (45gp value)",
+            "5 darts"
+          ],
+          "armor": [],
+          "clothing": [
+            "white mage’s cassock",
+            "extravagant hat",
+            "leather belt",
+            "leather gloves",
+            "high boots"
+          ],
+          "misc": [
+            "bronze-framed spellbook with slumber and counterspell",
+            "backpack",
+            "quill and ink",
+            "medium riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "2 weeks’ iron rations"
+          ],
+          "money": "34gp, 5sp",
+          "encumberance": "2 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "crusader": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Hermit",
+        "proficiencies": ["Laying on Hands", "Naturalism"],
+        "startingEquipment": {
+          "weapons": ["quarterstaff"],
+          "armor": ["hide armor"],
+          "clothing": ["itchy wool tunic and pants", "sandals"],
+          "misc": [
+            "hand-carved wood holy symbol (winged sun of Ammonar)",
+            "small sack",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "",
+          "encumberance": "4 2/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Prophet",
+        "proficiencies": ["Prophecy", "Performance (storytelling)"],
+        "startingEquipment": {
+          "weapons": ["sling", "30 sling stones", "quarterstaff"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "grey wool tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "backpack",
+            "1 week’s iron rations"
+          ],
+          "money": "6gp",
+          "encumberance": "4 5/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Mendicant",
+        "proficiencies": ["Beast Friendship", "Animal Husbandry"],
+        "startingEquipment": {
+          "weapons": ["wooden walking staff"],
+          "armor": ["leather-backed scale armor"],
+          "clothing": ["green traveler’s cloak", "green cassock", "sandals"],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "small sack",
+            "waterskin",
+            "2 weeks’ iron rations",
+            "trained hunting dog"
+          ],
+          "money": "5gp",
+          "encumberance": "6 4/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Proselytizer",
+        "proficiencies": ["Divine Health", "Diplomacy"],
+        "startingEquipment": {
+          "weapons": ["mace"],
+          "armor": ["wooden shield", "ring mail armor"],
+          "clothing": [
+            "purple priest’s cassock",
+            "embossed belt",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "small sack",
+            "holy book (The Laws of the Light)",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "20sp for alms",
+          "encumberance": "6 1/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Priest",
+        "proficiencies": ["Divine Blessing", "Theology 2"],
+        "startingEquipment": {
+          "weapons": ["mace"],
+          "armor": ["wooden shield", "banded plate armor"],
+          "clothing": [
+            "purple priest’s cassock",
+            "embossed belt",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "small sack",
+            "holy book (The Laws of the Light)",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "25sp for alms",
+          "encumberance": "8 1/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Undead Slayer",
+        "proficiencies": ["Righteous Rebuke", "Healing"],
+        "startingEquipment": {
+          "weapons": ["warhammer"],
+          "armor": ["steel shield", "chain mail armor"],
+          "clothing": ["blue priest’s cassock", "leather belt", "low boots"],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "backpack",
+            "1 flask of holy water",
+            "1 lb garlic",
+            "1 lb wolfsbane",
+            "mirror",
+            "4 stakes and mallet",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "8gp",
+          "encumberance": "7 3/6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Exorcist",
+        "proficiencies": ["Sensing Evil", "Intimidation"],
+        "startingEquipment": {
+          "weapons": ["warhammer"],
+          "armor": ["steel shield", "banded plate armor"],
+          "clothing": ["blue priest’s cassock", "leather belt", "low boots"],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "backpack",
+            "flask of holy water",
+            "6 torches",
+            "tinderbox",
+            "50’ rope",
+            "manacles",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "33gp",
+          "encumberance": "10 1/2 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Templar",
+        "proficiencies": ["Martial Training (swords/daggers)", "Riding"],
+        "startingEquipment": {
+          "weapons": ["polished sword and dagger"],
+          "armor": [
+            "steel shield bearing symbol of the winged sun",
+            "banded plate armor"
+          ],
+          "clothing": [
+            "purple armiger’s tunic and pants",
+            "embossed belt",
+            "riding boots",
+            "riding gloves"
+          ],
+          "misc": [
+            "holy symbol (winged sun of Ammonar)",
+            "medium riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "1 week’s iron rations"
+          ],
+          "money": "15gp",
+          "encumberance": "6 3/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "venturer": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Bankrupt",
+        "proficiencies": ["Running", "Gambling", "Driving"],
+        "startingEquipment": {
+          "weapons": ["Slightly notched short sword", "dagger"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "shabby linen tunic and pants",
+            "once-fancy embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "2 belt pouches (one empty!)",
+            "pair of bone dice",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "4gp",
+          "encumberance": "3 5/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Factotum",
+        "proficiencies": ["Arcane Dabbling", "Bargaining", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "wool tunic and pants",
+            "hooded cloak",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "tinderbox",
+            "12 torches",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "18gp",
+          "encumberance": "6 1/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Merchant Mariner",
+        "proficiencies": ["Swashbuckling", "Seafaring 2", "Seafaring"],
+        "startingEquipment": {
+          "weapons": ["Short bow", "quiver with 20 arrows", "scimitar"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "mariner’s tunic and pants",
+            "fancy gold sash",
+            "polished high boots"
+          ],
+          "misc": [
+            "backpack",
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp",
+          "encumberance": "5 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Merchant Traveler",
+        "proficiencies": ["Alertness", "Navigation", "Driving"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "2 throwing daggers"
+          ],
+          "armor": ["sturdy leather armor"],
+          "clothing": [
+            "tanned brown cloak",
+            "thick tunic and pants",
+            "leather belt",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "large treasure sack",
+            "50’ rope",
+            "tinderbox",
+            "lantern",
+            "small hammer",
+            "12 iron spikes",
+            "flask of common oil",
+            "flask of military oil",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp",
+          "encumberance": "6 3/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Antiquary",
+        "proficiencies": [
+          "Magical Engineering",
+          "Knowledge (history)",
+          "Driving"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["well-maintained leather armor"],
+          "clothing": [
+            "traveler’s tunic and pants",
+            "leather belt",
+            "sturdy low boots"
+          ],
+          "misc": [
+            "backpack",
+            "collector’s journal",
+            "quill and ink",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "26gp value collection of ancient coins",
+          "encumberance": "4 3/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Caravaneer",
+        "proficiencies": ["Precise Shooting", "Animal Husbandry", "Driving"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["leather armor under dusty robes"],
+          "clothing": ["embossed belt", "sturdy low boots"],
+          "misc": [
+            "backpack",
+            "tinderbox",
+            "12 torches",
+            "small cart",
+            "mule",
+            "draft harness and tack",
+            "2 leather saddlebags",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "6gp",
+          "encumberance": "6 1/6 st, or 4 1/6 st with rations and 6 torches on cart"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Comprador",
+        "proficiencies": ["Eavesdropping", "Language", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "pair of daggers"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "embroidered cloak",
+            "armiger’s tunic and pants",
+            "leather gloves",
+            "polished high boots"
+          ],
+          "misc": ["backpack", "waterskin", "1 week’s iron rations"],
+          "money": "70gp for bribes",
+          "encumberance": "4 2/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Magnate",
+        "proficiencies": ["Command", "Riding", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "embroidered cloak",
+            "armiger’s tunic and pants",
+            "gaudy silver rings (20gp value)",
+            "riding boots"
+          ],
+          "misc": [
+            "medium riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "20gp",
+          "encumberance": "2 5/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "assassin": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Cutthroat",
+        "proficiencies": ["Combat Reflexes", "Gambling"],
+        "startingEquipment": {
+          "weapons": ["Hand axe", "dagger"],
+          "armor": ["leather armor"],
+          "clothing": ["cheap tunic and pants", "leather belt", "high boots"],
+          "misc": [
+            "backpack",
+            "12 iron spikes",
+            "small hammer",
+            "flask of military oil",
+            "tinderbox",
+            "12 torches",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "",
+          "encumbrance": "5 3/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Bounty Hunter",
+        "proficiencies": ["Combat Trickery (incapacitate)", "Tracking"],
+        "startingEquipment": {
+          "weapons": ["Bola", "serrated sword", "dagger", "net"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "black cloak",
+            "traveler’s tunic and pants",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "crowbar",
+            "50’ rope",
+            "manacles",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "2gp",
+          "encumbrance": "6 1/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Pirate",
+        "proficiencies": ["Swashbuckling", "Seafaring"],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "scimitar",
+            "well-balanced dagger with boot-sheath"
+          ],
+          "armor": ["leather armor"],
+          "clothing": ["colorful tunic and pants", "silk sash", "high boots"],
+          "misc": [
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumbrance": "5 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Bravo",
+        "proficiencies": ["Fighting Style Spec. (dual weapon)", "Intimidation"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "serrated sword",
+            "left-hand dagger"
+          ],
+          "armor": ["black leather armor"],
+          "clothing": [
+            "duelist’s cloak",
+            "armiger’s tunic and pants",
+            "leather belt",
+            "leather duelist’s gloves",
+            "high boots"
+          ],
+          "misc": [
+            "belt pouch with bone dice made from last foe",
+            "backpack",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "9gp",
+          "encumbrance": "4 2/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Assassin-for-Hire",
+        "proficiencies": ["Precise Shooting", "Bargaining"],
+        "startingEquipment": {
+          "weapons": [
+            "Arbalest",
+            "case with 20 bolts",
+            "pair of well-sharpened short swords"
+          ],
+          "armor": ["bloodstained leather armor"],
+          "clothing": [
+            "dark cloak with hood",
+            "black tunic and pants",
+            "low boots",
+            "leather belt"
+          ],
+          "misc": [
+            "small sack",
+            "2 flasks of military oil",
+            "tinderbox",
+            "50’ rope",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "15gp",
+          "encumbrance": "6 2/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Poisoner",
+        "proficiencies": ["Poisoning", "Seduction"],
+        "startingEquipment": {
+          "weapons": ["Slender short sword", "dagger", "long leather whip"],
+          "armor": ["tight leather armor"],
+          "clothing": [
+            "leather cloak",
+            "elegant linen tunic and pants",
+            "silk sash",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "manacles",
+            "1 dose of giant centipede poison",
+            "1 lb of dried belladonna",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "19gp",
+          "encumbrance": "4 2/6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Infiltrator",
+        "proficiencies": ["Skulking", "Disguise"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["unmarked leather armor"],
+          "clothing": [
+            "simple hooded cloak",
+            "plain tunic and pants",
+            "leather belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "thieves’ tools",
+            "disguise kit",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "33gp for bribes",
+          "encumbrance": "5 2/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Cult Deathbringer",
+        "proficiencies": ["Arcane Dabbling", "Theology"],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "wavy-bladed sword and short sword",
+            "dagger in wrist sheath"
+          ],
+          "armor": ["leather armor under grey cassock with hood"],
+          "clothing": [
+            "long leather gloves",
+            "soft-soled shoes",
+            "leather belt"
+          ],
+          "misc": [
+            "2 belt pouches",
+            "holy symbol (eclipsed sun)",
+            "2 flasks of holy water",
+            "holy book (The Eclipse of Calefa)",
+            "6 torches",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "4gp",
+          "encumbrance": "6 2/6 st"
+        }
+      }
+    ]
+  },
+  "barbarian": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Tribal Warrior (Ivory Kingdoms)",
+        "proficiencies": ["Ambushing", "Tracking", "Running", "Endurance"],
+        "startingEquipment": {
+          "weapons": [
+            "Bola",
+            "5 feathered darts",
+            "spear decorated with beads and feathers",
+            "club"
+          ],
+          "armor": ["wildebeest hide armor"],
+          "clothing": ["loincloth", "sandals", "hide belt"],
+          "misc": [
+            "cowhide shield",
+            "hide pouch",
+            "2 small hide sacks",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "65sp",
+          "encumbrance": "5 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Berserker (Jutland)",
+        "proficiencies": [
+          "Berserkergang",
+          "Intimidation",
+          "Climbing",
+          "Seafaring"
+        ],
+        "startingEquipment": {
+          "weapons": ["Long bearded axe"],
+          "armor": ["chain mail armor"],
+          "clothing": [
+            "rough spun wool tunic and pants",
+            "embossed belt",
+            "low fur-lined boots"
+          ],
+          "misc": ["backpack", "waterskin", "1 week’s iron rations"],
+          "money": "4gp",
+          "encumbrance": "6 2/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Sea Rover (Jutland)",
+        "proficiencies": [
+          "Swashbuckling",
+          "Navigation",
+          "Climbing",
+          "Seafaring"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "iron-tipped spear",
+            "bearded axe"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "rough spun wool tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "kite shield painted with a dragon",
+            "small sack",
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "6gp",
+          "encumbrance": "6 5/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Skirmisher (Skysostan)",
+        "proficiencies": [
+          "Skirmishing",
+          "Endurance",
+          "Precise Shooting",
+          "Riding"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Composite bow",
+            "quiver with 20 arrows",
+            "pair of scimitars"
+          ],
+          "armor": ["leather-backed scale armor"],
+          "clothing": ["wool tunic and pants", "embossed belt", "low boots"],
+          "misc": ["backpack", "waterskin", "1 week’s iron rations"],
+          "money": "2gp",
+          "encumbrance": "5 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Death Dealer (Jutland)",
+        "proficiencies": [
+          "Combat Ferocity",
+          "Survival",
+          "Climbing",
+          "Seafaring"
+        ],
+        "startingEquipment": {
+          "weapons": ["Two-handed iron sword", "francisca"],
+          "armor": ["ring mail armor"],
+          "clothing": ["wool tunic and pants", "leather belt", "low boots"],
+          "misc": [
+            "silver arm-bands (20gp value)",
+            "belt pouch",
+            "small sack",
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "12gp",
+          "encumbrance": "7 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Pit Fighter (Ivory Kingdoms)",
+        "proficiencies": [
+          "Combat Reflexes",
+          "Gambling",
+          "Running",
+          "Endurance"
+        ],
+        "startingEquipment": {
+          "weapons": ["Spear", "weighted net", "hand axe"],
+          "armor": [
+            "heavy arena armor",
+            "plumed heavy helmet with visor and crest"
+          ],
+          "clothing": [
+            "armiger’s tunic and pants",
+            "strappy spiked belt",
+            "sandals"
+          ],
+          "misc": [
+            "small sack",
+            "amphora of oil (for polishing body)",
+            "2 weeks’ iron rations"
+          ],
+          "money": "34gp in arena winnings",
+          "encumbrance": "9 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Housecarl (Jutland)",
+        "proficiencies": [
+          "Fighting Style Specialization (weapon and shield)",
+          "Manual of Arms",
+          "Climbing",
+          "Seafaring"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "iron spear",
+            "iron sword"
+          ],
+          "armor": ["chain mail armor"],
+          "clothing": [
+            "wool tunic and pants",
+            "silver arm-bands (20gp value)",
+            "silver amulet (50gp value)",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "kite shield painted with house crest",
+            "backpack",
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s meaty iron rations"
+          ],
+          "money": "11gp",
+          "encumbrance": "9 2/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Nomad (Skysostan)",
+        "proficiencies": [
+          "Mounted Combat",
+          "Survival",
+          "Precise Shooting",
+          "Riding"
+        ],
+        "startingEquipment": {
+          "weapons": ["Composite bow", "quiver with 20 arrows", "scimitar"],
+          "armor": ["leather-backed scale armor"],
+          "clothing": ["wool tunic and pants", "riding boots"],
+          "misc": [
+            "steppe riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "1 week’s iron rations"
+          ],
+          "money": "6gp",
+          "encumbrance": "3 4/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "bard": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Woodland Piper",
+        "proficiencies": [
+          "Beast Friendship",
+          "Naturalism",
+          "Performance (instruments)",
+          "Familiar"
+        ],
+        "startingEquipment": {
+          "weapons": ["2 javelins"],
+          "armor": ["hide armor"],
+          "clothing": ["leather shoes", "leather belt"],
+          "misc": [
+            "belt pouch",
+            "pan pipes",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp",
+          "encumbrance": "2 5/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Hedge Magician",
+        "proficiencies": [
+          "Prestidigitation",
+          "Alchemy",
+          "Performance (oration)",
+          "Soothsaying"
+        ],
+        "startingEquipment": {
+          "weapons": ["Quarterstaff"],
+          "armor": ["leather armor under mage’s cassock"],
+          "clothing": [
+            "cloak with embroidered sigils",
+            "fancy silver sash",
+            "low boots"
+          ],
+          "misc": [
+            "2 small sacks",
+            "2 tallow candles",
+            "tinderbox",
+            "1 pint of rare wine in potion vial",
+            "leather-bound spellbook (blank)",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "2gp",
+          "encumbrance": "5 4/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Swashbuckler",
+        "proficiencies": [
+          "Swashbuckling",
+          "Seafaring",
+          "Performance (singing)",
+          "Fighting Style Specialization (dual weapons)"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Short bow",
+            "quiver with 20 arrows",
+            "scimitar",
+            "well-balanced dagger with boot-sheath"
+          ],
+          "armor": ["leather armor"],
+          "clothing": [
+            "colorful tunic and pants",
+            "bright silk girdle",
+            "high boots"
+          ],
+          "misc": [
+            "50’ rope",
+            "grappling hook",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumbrance": "6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Wandering Minstrel",
+        "proficiencies": [
+          "Magical Music",
+          "Diplomacy",
+          "Performance (instruments)",
+          "Precise Shooting"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["well-maintained leather armor"],
+          "clothing": [
+            "traveler’s tunic and pants",
+            "embossed belt",
+            "sturdy low boots"
+          ],
+          "misc": [
+            "belt pouch",
+            "small sack",
+            "lute",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumbrance": "4 2/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Historian",
+        "proficiencies": [
+          "Magical Engineering",
+          "Knowledge (history)",
+          "Performance (epic poetry)",
+          "Bright Lore of Aura"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["well-maintained laminated linen armor"],
+          "clothing": ["traveler’s tunic and pants", "polished high boots"],
+          "misc": [
+            "backpack",
+            "parchment journal half-filled with entries",
+            "quill and ink",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "6gp",
+          "encumbrance": "6 2/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Beguiler",
+        "proficiencies": [
+          "Mystic Aura",
+          "Seduction",
+          "Performance (singing)",
+          "Treachery (Venturer)"
+        ],
+        "startingEquipment": {
+          "weapons": ["Crossbow", "case with 20 bolts", "sword"],
+          "armor": ["polished chain mail armor"],
+          "clothing": [
+            "flamboyant fur-lined cloak",
+            "fancy tunic and pants",
+            "long leather gloves",
+            "high boots",
+            "bright silk sash"
+          ],
+          "misc": ["purse", "belt pouch", "waterskin", "2 weeks’ iron rations"],
+          "money": "10gp",
+          "encumbrance": "7 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Spy",
+        "proficiencies": [
+          "Disguise",
+          "Streetwise",
+          "Performance (acting)",
+          "Hiding (Thief)"
+        ],
+        "startingEquipment": {
+          "weapons": [
+            "Crossbow",
+            "case with 20 bolts",
+            "short sword",
+            "dagger"
+          ],
+          "armor": ["unmarked leather armor"],
+          "clothing": [
+            "simple hooded cloak",
+            "traveler’s tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "backpack",
+            "disguise kit",
+            "crowbar",
+            "50’ rope",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "56gp for bribes",
+          "encumbrance": "6 2/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Aristocrat",
+        "proficiencies": [
+          "Command",
+          "Leadership",
+          "Performance (oration)",
+          "Armor Training (heavy)"
+        ],
+        "startingEquipment": {
+          "weapons": ["Matching sword and dagger with lacquered hilts"],
+          "armor": ["exquisitely made plate armor"],
+          "clothing": [
+            "shield",
+            "fur-lined cloak",
+            "armiger’s tunic and pants",
+            "high boots"
+          ],
+          "misc": [
+            "medium riding horse",
+            "riding saddle and tack",
+            "2 leather saddlebags",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "10gp",
+          "encumbrance": "6 2/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "bladedancer": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Warrior Witch",
+        "proficiencies": ["Syncretism", "Alchemy"],
+        "startingEquipment": {
+          "weapons": ["wickedly curved short sword"],
+          "armor": [],
+          "clothing": [
+            "animal skin cloak",
+            "fur-lined leather girdle",
+            "leather breast band",
+            "loin cloth",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (lion of Ianna)",
+            "small sack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "3gp",
+          "encumbrance": "1 4/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Oracle",
+        "proficiencies": ["Prophecy", "Theology"],
+        "startingEquipment": {
+          "weapons": ["wavy-bladed short sword"],
+          "armor": ["strappy leather armor"],
+          "clothing": ["crimson and gold chiton", "sandals"],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "small sack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "4gp",
+          "encumbrance": "3 4/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Bringer of Mercy",
+        "proficiencies": ["Laying on Hands", "Healing"],
+        "startingEquipment": {
+          "weapons": ["slender-bladed sword", "very sharp dagger"],
+          "armor": ["leather armor"],
+          "clothing": ["white chiton", "white sash", "high sandals"],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "backpack",
+            "1 lb comfrey",
+            "waterskin",
+            "2 weeks' iron rations"
+          ],
+          "money": "5gp",
+          "encumbrance": "5 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Bladesinger",
+        "proficiencies": ["Magical Music", "Performance (singing)"],
+        "startingEquipment": {
+          "weapons": ["long-bladed glaive", "polished sword and dagger"],
+          "armor": ["strappy leather armor"],
+          "clothing": [
+            "bladedancer's head dress (20gp value)",
+            "crimson chiton",
+            "gold silk sash",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "backpack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "1gp",
+          "encumbrance": "4 5/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Temple Bladedancer",
+        "proficiencies": ["Swashbuckling", "Performance (dancing)"],
+        "startingEquipment": {
+          "weapons": ["pair of gracefully curved swords"],
+          "armor": ["polished leather armor"],
+          "clothing": [
+            "bladedancer's head dress (20gp value)",
+            "golden fur-trimmed cloak",
+            "white chiton",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "backpack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "4gp",
+          "encumbrance": "3 5/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Veiled Assassin",
+        "proficiencies": ["Quiet Magic", "Seduction"],
+        "startingEquipment": {
+          "weapons": ["slender short sword", "dagger"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "black fur-lined cloak",
+            "black silk veil and sash",
+            "black linen chiton",
+            "long leather gloves",
+            "gold bangles (20gp value)",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "backpack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "20gp",
+          "encumbrance": "4 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Consular",
+        "proficiencies": ["Contemplation", "Diplomacy"],
+        "startingEquipment": {
+          "weapons": ["finely made sword and dagger"],
+          "armor": ["elegant leather armor"],
+          "clothing": [
+            "bladedancer's head dress (20gp value)",
+            "white silk chiton",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "backpack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "33gp",
+          "encumbrance": "3 2/3 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Warrior Princess",
+        "proficiencies": ["Martial Training (bows/crossbows)", "Riding"],
+        "startingEquipment": {
+          "weapons": [
+            "composite bow",
+            "quiver with 20 arrows",
+            "finely made glaive"
+          ],
+          "armor": ["elegant leather armor"],
+          "clothing": [
+            "crimson chiton",
+            "gold silk sash",
+            "high boots",
+            "bladedancer's head dress (20gp value)"
+          ],
+          "misc": [
+            "holy symbol (9-pointed star of Ianna)",
+            "medium riding horse",
+            "riding tack and saddle",
+            "leather saddlebag",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "",
+          "encumbrance": "4 3/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "paladin": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Errant",
+        "proficiencies": ["Running", "Survival"],
+        "startingEquipment": {
+          "weapons": ["sword"],
+          "armor": [],
+          "clothing": ["peasant’s wool tunic and pants", "low sandals"],
+          "misc": [
+            "Hand-carved wood holy symbol (gallery of Naurivus)",
+            "small sack",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "1gp",
+          "encumbrance": "1 4/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Gallant",
+        "proficiencies": ["Mystic Aura", "Diplomacy"],
+        "startingEquipment": {
+          "weapons": ["sword"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "well-kept wool tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "Holy symbol (9-pointed star of Ianna)",
+            "2 belt pouches",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "1gp",
+          "encumbrance": "3 5/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Temple Guard",
+        "proficiencies": ["Alertness", "Manual of Arms 2"],
+        "startingEquipment": {
+          "weapons": ["spear"],
+          "armor": ["round wooden shield", "ring mail armor"],
+          "clothing": [
+            "purple military cloak",
+            "guard’s tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "Holy symbol (winged sun of Ammonar)",
+            "backpack",
+            "belt pouch",
+            "tinderbox",
+            "6 torches",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "2gp",
+          "encumbrance": "7 5/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Champion",
+        "proficiencies": ["Divine Blessing", "Theology"],
+        "startingEquipment": {
+          "weapons": ["sword"],
+          "armor": [
+            "steel shield bearing symbol of winged sun",
+            "laminated linen armor"
+          ],
+          "clothing": [
+            "wool tunic and pants",
+            "embossed belt",
+            "high boots",
+            "short gloves"
+          ],
+          "misc": [
+            "Holy symbol (winged sun of Ammonar)",
+            "backpack",
+            "tinderbox",
+            "12 torches",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "7gp",
+          "encumbrance": "8 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Foe Hunter",
+        "proficiencies": ["Combat Ferocity", "Military Strategy"],
+        "startingEquipment": {
+          "weapons": ["two-handed sword"],
+          "armor": ["banded plate armor"],
+          "clothing": ["wool tunic and pants", "embossed belt", "low boots"],
+          "misc": [
+            "Holy symbol (winged sun of Ammonar)",
+            "backpack",
+            "1 lb garlic",
+            "1 lb wolfsbane",
+            "4 stakes and mallet",
+            "tinderbox",
+            "6 torches",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "10gp",
+          "encumbrance": "9 1/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Vanguard",
+        "proficiencies": ["Combat Reflexes", "Endurance"],
+        "startingEquipment": {
+          "weapons": ["razor-sharp glaive", "short sword"],
+          "armor": [
+            "steel shield bearing symbol of Türas",
+            "banded plate armor"
+          ],
+          "clothing": [
+            "blue armiger’s tunic and pants",
+            "leather belt",
+            "high boots"
+          ],
+          "misc": [
+            "Holy symbol (hammer of Türas)",
+            "backpack",
+            "flask of holy water",
+            "tinderbox",
+            "6 torches",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "1gp",
+          "encumbrance": "10 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Inquisitor",
+        "proficiencies": ["Illusion Resistance", "Theology"],
+        "startingEquipment": {
+          "weapons": ["polished sword"],
+          "armor": [
+            "steel shield bearing symbol of Türas",
+            "banded plate armor"
+          ],
+          "clothing": ["blue priest’s cassock", "leather belt", "high boots"],
+          "misc": [
+            "Holy symbol (hammer of Türas)",
+            "backpack",
+            "2 flasks of holy water",
+            "tinderbox",
+            "12 torches",
+            "manacles",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "3gp",
+          "encumbrance": "9 2/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Templar",
+        "proficiencies": ["Command", "Riding"],
+        "startingEquipment": {
+          "weapons": ["white lance", "polished sword"],
+          "armor": [
+            "steel shield bearing symbol of the winged sun",
+            "banded plate armor"
+          ],
+          "clothing": ["purple armiger’s tunic and pants", "riding boots"],
+          "misc": [
+            "Holy symbol (winged sun of Ammonar)",
+            "medium riding horse",
+            "riding saddle and tack",
+            "leather saddlebag",
+            "waterskin",
+            "1 week's iron rations"
+          ],
+          "money": "12gp",
+          "encumbrance": "7 3/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "priestess": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Anchorite",
+        "proficiencies": ["Quiet Magic", "Survival"],
+        "startingEquipment": {
+          "weapons": ["aged and dusty staff"],
+          "armor": [],
+          "clothing": [
+            "animal skin cloak",
+            "leather girdle",
+            "leather breast band",
+            "loin cloth",
+            "high boots"
+          ],
+          "misc": [
+            "holy symbol (white lady of Mityara)",
+            "small sack",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "9gp",
+          "encumbrance": "2 3/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Oracle",
+        "proficiencies": ["Prophecy", "Performance (storytelling)"],
+        "startingEquipment": {
+          "weapons": ["slender whitewood staff"],
+          "armor": [],
+          "clothing": ["white chiton", "sandals"],
+          "misc": [
+            "holy symbol (white lady of Mityara)",
+            "small sack",
+            "flask of holy water",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "5gp",
+          "encumbrance": "2 4/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Chantress",
+        "proficiencies": ["Magical Music", "Performance (singing)"],
+        "startingEquipment": {
+          "weapons": ["slender whitewood staff"],
+          "armor": [],
+          "clothing": [
+            "priestess’s headdress (20gp)",
+            "white chiton",
+            "gold sash",
+            "high boots"
+          ],
+          "misc": ["backpack", "waterskin", "2 weeks’ iron rations"],
+          "money": "19gp",
+          "encumbrance": "3 3/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Canoness",
+        "proficiencies": ["Contemplation", "Theology 2"],
+        "startingEquipment": {
+          "weapons": ["slender whitewood staff"],
+          "armor": [],
+          "clothing": [
+            "priestess’s head dress (20gp value)",
+            "white chiton",
+            "gold silk sash",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "flask of holy water",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "15gp",
+          "encumbrance": "3 3/6 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Medician",
+        "proficiencies": ["Laying on Hands", "Healing"],
+        "startingEquipment": {
+          "weapons": ["slender whitewood staff"],
+          "armor": [],
+          "clothing": ["white chiton", "gold silk sash", "high boots"],
+          "misc": [
+            "backpack",
+            "2 lb comfrey",
+            "2 lb goldenrod",
+            "2 lb woundwort",
+            "2 lb horsetail",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumbrance": "3 5/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Beatific",
+        "proficiencies": ["Mystic Aura", "Seduction"],
+        "startingEquipment": {
+          "weapons": ["slender white wood staff"],
+          "armor": [],
+          "clothing": [
+            "priestess’s head dress (20gp value)",
+            "white chiton",
+            "gold silk sash and veil",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "flask of holy water",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "28gp",
+          "encumbrance": "3 4/6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Missionary",
+        "proficiencies": ["Mastery of Enchantments & Illusions", "Language"],
+        "startingEquipment": {
+          "weapons": ["slender whitewood staff"],
+          "armor": [],
+          "clothing": [
+            "priestess’s head dress (20gp value)",
+            "white silk chiton",
+            "white silk sash",
+            "high boots"
+          ],
+          "misc": [
+            "backpack",
+            "flask of holy water",
+            "holy book (The Laws of the Light)",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "12gp",
+          "encumbrance": "3 1/6 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Lightbringer",
+        "proficiencies": ["Divine Blessing", "Leadership"],
+        "startingEquipment": {
+          "weapons": ["slender whitewood staff"],
+          "armor": [],
+          "clothing": ["white silk chiton", "gold silk sash", "high boots"],
+          "misc": [
+            "holy symbol (white lady of Mityara)",
+            "light riding horse",
+            "riding tack and saddle",
+            "2 leather saddlebags",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "4gp",
+          "encumbrance": "1 2/6 st with rations on horse"
+        }
+      }
+    ]
+  },
+  "shaman": {
+    "subclasses": [
+      {
+        "roll": "3-4",
+        "template": "Pariah",
+        "proficiencies": ["Syncretism", "Survival", "Quiet Magic"],
+        "startingEquipment": {
+          "weapons": ["club"],
+          "armor": ["hide armor"],
+          "clothing": ["itchy wool tunic and pants", "rawhide belt", "sandals"],
+          "misc": [
+            "Rat totem animal",
+            "heretical holy symbol (horned rat)",
+            "small sack",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "",
+          "encumbrance": "3 4/6 st"
+        }
+      },
+      {
+        "roll": "5-6",
+        "template": "Wise Man",
+        "proficiencies": [
+          "Loremastery",
+          "Knowledge (history)",
+          "Sensing Power"
+        ],
+        "startingEquipment": {
+          "weapons": ["quarterstaff"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "grey wool tunic and pants",
+            "embossed belt",
+            "low boots"
+          ],
+          "misc": [
+            "Owl totem animal",
+            "holy symbol (silver crescent)",
+            "backpack",
+            "waterskin",
+            "2 weeks’ iron rations"
+          ],
+          "money": "7gp",
+          "encumbrance": "5 3/6 st"
+        }
+      },
+      {
+        "roll": "7-8",
+        "template": "Warchanter",
+        "proficiencies": [
+          "Battle Magic",
+          "Performance (chanting)",
+          "Berserkergang"
+        ],
+        "startingEquipment": {
+          "weapons": ["iron spear"],
+          "armor": ["leather armor"],
+          "clothing": ["wool tunic and pants", "embossed belt", "low boots"],
+          "misc": [
+            "Bear totem animal",
+            "holy symbol (bear’s teeth)",
+            "round wooden shield",
+            "backpack",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "",
+          "encumbrance": "5 3/6 st"
+        }
+      },
+      {
+        "roll": "9-10",
+        "template": "Runecaster",
+        "proficiencies": ["Elementalism", "Craft (rune-carving)", "Ambushing"],
+        "startingEquipment": {
+          "weapons": ["hand axe"],
+          "armor": ["leather armor"],
+          "clothing": ["wool tunic and pants", "embossed belt", "low boots"],
+          "misc": [
+            "Wolf totem animal",
+            "holy symbol (runestone)",
+            "wooden shield",
+            "backpack",
+            "carving knife",
+            "flask of holy water",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "1gp",
+          "encumbrance": "5 st"
+        }
+      },
+      {
+        "roll": "11-12",
+        "template": "Druid",
+        "proficiencies": ["Beast Friendship", "Naturalism", "Divine Blessing"],
+        "startingEquipment": {
+          "weapons": ["whitewood spear", "sickle sword", "dagger"],
+          "armor": ["leather armor under white druid’s robes"],
+          "clothing": ["leather belt", "low boots"],
+          "misc": [
+            "Raven totem animal",
+            "holy symbol (golden sickle)",
+            "shield",
+            "backpack",
+            "flask of holy water",
+            "1 lb garlic",
+            "1 lb wolfsbane",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "8gp",
+          "encumbrance": "6 2/6 st"
+        }
+      },
+      {
+        "roll": "13-14",
+        "template": "Snake Handler",
+        "proficiencies": ["Divine Health", "Healing", "Laying on Hands"],
+        "startingEquipment": {
+          "weapons": ["long staff", "dagger"],
+          "armor": ["leather armor under forest green robes"],
+          "clothing": ["embossed belt", "low boots"],
+          "misc": [
+            "Python totem animal",
+            "holy symbol (two snakes coiled around rod)",
+            "backpack",
+            "2 lbs birthwort",
+            "2 lbs comfrey",
+            "2 lbs horsetail",
+            "2 lbs woundwort",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "2gp",
+          "encumbrance": "6 st"
+        }
+      },
+      {
+        "roll": "15-16",
+        "template": "Spirit Raiser",
+        "proficiencies": ["Sensing Evil", "Leadership", "Command"],
+        "startingEquipment": {
+          "weapons": ["quarterstaff", "dagger"],
+          "armor": ["leather armor under blue robes"],
+          "clothing": ["leather belt", "low boots"],
+          "misc": [
+            "Eagle totem animal",
+            "holy symbol (eagle on sun)",
+            "backpack",
+            "belt pouch",
+            "2 flasks of holy water",
+            "tinderbox",
+            "6 tallow candles",
+            "4 lbs garlic",
+            "waterskin",
+            "1 week’s iron rations"
+          ],
+          "money": "25gp",
+          "encumbrance": "7 st"
+        }
+      },
+      {
+        "roll": "17-18",
+        "template": "Nomad Shaman",
+        "proficiencies": ["Unflappable Casting", "Riding", "Mounted Combat"],
+        "startingEquipment": {
+          "weapons": ["scimitar"],
+          "armor": ["leather armor"],
+          "clothing": [
+            "wool cloak",
+            "wool tunic and pants",
+            "leather gloves",
+            "leather belt",
+            "high boots"
+          ],
+          "misc": [
+            "Horse totem animal",
+            "holy symbol (engraved horn)",
+            "round wooden shield",
+            "backpack",
+            "belt pouch",
+            "steppe riding horse",
+            "riding saddle and tack",
+            "2 leather saddlebags",
+            "2 weeks’ iron rations"
+          ],
+          "money": "21gp",
+          "encumbrance": "3 4/6 st with rations on horse"
+        }
+      }
+    ]
+  }
+}
