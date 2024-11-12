@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import CharacterSection from './CharacterSection.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
@@ -7,34 +7,19 @@ import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
 import Attributes from './AttributeSelector.vue'
 import Class from './ClassSelector.vue'
+import SubclassSection from './SubclassSection.vue'
 import { useCharacterStore } from '../stores/characterStore'
-export default {
-  components: {
-    CharacterSection, // Register the component here
-    DocumentationIcon,
-    Class,
-    Attributes,
-    ToolingIcon,
-    EcosystemIcon,
-    CommunityIcon,
-    SupportIcon
-  },
-  setup() {
-    const store = useCharacterStore();
-    return{
-      store
-    }
-  }}
+const characterStore = useCharacterStore()
 </script>
 
 <template>
-  <button @click="store.$reset">Reset</button>
+  <button @click="characterStore.$reset">Reset</button>
   <CharacterSection >
     <template #icon>
       <DocumentationIcon />
     </template>
     <template #heading>Character Attributes</template>
-    <Attributes v-if="store.step===null" />
+    <Attributes />
   </CharacterSection>
 
   <CharacterSection>
@@ -42,7 +27,7 @@ export default {
       <ToolingIcon />
     </template>
     <template #heading>Select class</template>
-    <Class v-if="store.step==='Select class'"/>
+    <Class />
   </CharacterSection>
 
   <CharacterSection>
@@ -50,7 +35,7 @@ export default {
       <EcosystemIcon />
     </template>
     <template #heading>Roll subclass and HP</template>
-
+    <SubclassSection />
   </CharacterSection>
 
   <CharacterSection>

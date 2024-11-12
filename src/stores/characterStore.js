@@ -1,22 +1,24 @@
 // src/stores/characterStore.js
 import { defineStore } from 'pinia'
 
-const defaultState = {
-  attributes: [
-    { name: 'Strength (STR)', value: null, key: 'STR', mod: null },
-    { name: 'Intellect (INT)', value: null, key: 'INT', mod: null },
-    { name: 'Will (WIL)', value: null, key: 'WIL', mod: null },
-    { name: 'Dexterity (DEX)', value: null, key: 'DEX', mod: null },
-    { name: 'Constitution (CON)', value: null, key: 'CON', mod: null },
-    { name: 'Charisma (CHA)', value: null, key: 'CHA', mod: null },
-  ],
-  class: {},
-  subclass: {},
-  rollHistory: [], // Add this line for roll history
-  step: null
-}
 export const useCharacterStore = defineStore('character', {
-  state: () => ({...defaultState}),
+  state: () => {
+    return {
+      attributes: [
+        { name: 'Strength (STR)', value: null, key: 'STR', mod: null },
+        { name: 'Dexterity (DEX)', value: null, key: 'DEX', mod: null },
+        { name: 'Constitution (CON)', value: null, key: 'CON', mod: null },
+        { name: 'Intellect (INT)', value: null, key: 'INT', mod: null },
+        { name: 'Will (WIL)', value: null, key: 'WIL', mod: null },
+        { name: 'Charisma (CHA)', value: null, key: 'CHA', mod: null },
+      ],
+      class: {},
+      subclass: {},
+      rollHistory: [], // Add this line for roll history
+      hitDice: null,
+      step: null,
+    }
+  },
   actions: {
     addRollToHistory(roll) {
       this.rollHistory.push(roll) // Add new roll to the history
@@ -28,7 +30,10 @@ export const useCharacterStore = defineStore('character', {
     selectClass(classItem) {
       this.class = classItem
     },
-    nextStep(step){
+    selectSublass(subclassItem) {
+      this.subclass = subclassItem
+    },
+    nextStep(step) {
       this.step = step
     },
   },
