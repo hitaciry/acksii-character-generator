@@ -33,6 +33,12 @@ i {
   color: var(--color-text);
 }
 
+@media (max-width: 600px) {
+  i {
+    display: none; /* Hide icons on mobile devices */
+  }
+}
+
 h3 {
   font-size: 1.2rem;
   font-weight: 500;

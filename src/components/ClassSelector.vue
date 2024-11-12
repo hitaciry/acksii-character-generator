@@ -1,7 +1,7 @@
 <template>
   <div v-if="characterStore.class === null" class="class-container">
-    <div class="class-grid">
-      <div v-for="(className, index) in classStore.allClasses" :key="index" class="class-row">
+    <div class="class-flex">
+      <div v-for="(className, index) in classStore.allClasses" :key="index" class="class-block">
         <div>{{ formatKey(className) }}</div>
         <button v-if="characterStore.nonNullAttributeCount===6" @click="selectClass(className)">Select</button>
       </div>
@@ -53,7 +53,7 @@ export default {
 }
 
 .class-grid {
-  display: grid;
+  display: flex;
   /* Use grid layout */
   grid-template-columns: repeat(3, 1fr);
   /* Create 3 equal width columns */
@@ -61,13 +61,15 @@ export default {
   /* Space between grid items */
 }
 
-.class-row {
+.class-block {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   /* Space between title and button */
   padding: 10px;
+  width: 180px;
   /* Padding for better appearance */
-  min-width: 150px;
+  min-width: 180px;
 }
 
 button {
