@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/GreetingHeader.vue'
 import DiceRoll from './components/DiceRoll.vue'
+import ResetFab from './components/ResetFab.vue';
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import DiceRoll from './components/DiceRoll.vue'
 
   <RouterView />
   <DiceRoll />
+  <ResetFab />
 </template>
 
 <style scoped>

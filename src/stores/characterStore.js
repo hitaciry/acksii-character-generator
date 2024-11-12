@@ -12,8 +12,8 @@ export const useCharacterStore = defineStore('character', {
         { name: 'Will (WIL)', value: null, key: 'WIL', mod: null },
         { name: 'Charisma (CHA)', value: null, key: 'CHA', mod: null },
       ],
-      class: {},
-      subclass: {},
+      class: null,
+      subclass: null,
       rollHistory: [], // Add this line for roll history
       hitDice: null,
       step: null,

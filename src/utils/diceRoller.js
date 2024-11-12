@@ -50,16 +50,18 @@ export function rollDiceWithSkip(input, skipLowest = 0, minValue = 0) {
   )
 }
 
-export function rollTheRange(daces, rollRange){
-  const{total} = rollDice(daces);
-  rollRange.forEach((element, index) => {
+export function rollTheRange(daces, rollRange) {
+  const { total } = rollDice(daces)
+  for (let index = 0; index < rollRange.length; index++) {
+    const range = rollRange[index]
     const regex = /^(\d*)?-(\d*)$/
-    const match = element.trim().match(regex)
+    const match = range.trim().match(regex)
 
     if (!match) {
       throw new Error("Invalid input. Please use the format 'NdX'.")
     }
-    if (total >= match[0] && total <= match[1] )
+    if (total >= match[1] && total <= match[2]) {
       return index
-  });
+    }
+  }
 }

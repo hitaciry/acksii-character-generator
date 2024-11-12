@@ -1,13 +1,13 @@
 import { defineStore } from 'pinia'
 
 import classData from '../assets/classes.json' // Adjust the path as needed
-import subClasses from '../assets/subclasses.json'
+import subClassData from '../assets/subclasses.json'
 
 export const useClassStore = defineStore('class', {
   state: () => ({
     classes: classData, // Store all classes data
     selectedClass: null, // To store selected class if needed
-    subClasses: subClasses,
+    subClasses: subClassData,
     selectedSubclass: null,
   }),
   actions: {
@@ -33,7 +33,7 @@ export const useClassStore = defineStore('class', {
       return Object.keys(state.classes) // Returns an array of class names
     },
     allSubclasses(state) {
-      return Object.keys(state.subclass)
+      return Object.keys(state.subClasses)
     },
     getClassByName(state) {
       return className => state.classes[className] || null // Get class data by name

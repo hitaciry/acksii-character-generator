@@ -8,12 +8,9 @@ import SupportIcon from './icons/IconSupport.vue'
 import Attributes from './AttributeSelector.vue'
 import Class from './ClassSelector.vue'
 import SubclassSection from './SubclassSection.vue'
-import { useCharacterStore } from '../stores/characterStore'
-const characterStore = useCharacterStore()
 </script>
 
 <template>
-  <button @click="characterStore.$reset">Reset</button>
   <CharacterSection >
     <template #icon>
       <DocumentationIcon />

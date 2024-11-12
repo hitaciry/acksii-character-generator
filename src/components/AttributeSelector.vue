@@ -13,7 +13,6 @@
       </button>
     </div>
   </div>
-  <button v-if="characterStore.attributes.findIndex(a=>a.value===null)===-1" @click="nextStep">Next</button>
 </template>
 
 <script>
