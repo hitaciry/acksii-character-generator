@@ -1,41 +1,51 @@
 <script>
-import DinamicComponent from './DinamicComponent.vue';
-import { useCharacterStore } from '@/stores/characterStore';
-import { useClassStore } from '@/stores/classStore';
-import { rollDiceWithSkip, rollTheRange } from '@/utils/diceRoller';
+import DinamicComponent from './DinamicComponent.vue'
+import { useCharacterStore } from '@/stores/characterStore'
+import { useClassStore } from '@/stores/classStore'
+import { rollTheRange } from '@/utils/diceRoller'
 export default {
-  components:{DinamicComponent},
-  setup(){
+  components: { DinamicComponent },
+  setup() {
     const characterStore = useCharacterStore();
-    const classStore = useClassStore();
-    const rollSubclass = () =>{
-      const $class = characterStore.class
-      const { subclasses } = classStore.subClasses[$class.className]
-      const rolledIndex = rollTheRange('3d6', subclasses.map(s =>s.roll))
-      const subclass = subclasses[rolledIndex];
-      const hitDice = rollDiceWithSkip($class.hitDice, null, 4 ) + characterStore.attributes.find(a =>a.key === 'CON').mod
-      classStore.$patch({
-        selectedSubclass: subclass
-      })
+    const { subClasses } = useClassStore();
+    const rollSubclass = () => {
+      const className = characterStore.className;
+      const rolledIndex = rollTheRange(
+        '3d6',
+        subClasses[className].map(s => s.roll),
+      )
+      const { template, proficiencies, startingEquipment } =
+        subClasses[className][rolledIndex]
       characterStore.$patch({
-        subclass,
-        hitDice
+        proficiencies,
+        startingEquipment,
+        subclassTemplate: template,
       })
-
     }
-    return{
-      characterStore, 
-      rollSubclass
+    return {
+      subClass: {
+        template: characterStore.subclassTemplate,
+        proficiencies: characterStore.proficiencies,
+        startingEquipment: characterStore.startingEquipment,
+      },
+      characterStore,
+      rollSubclass,
     }
-  }
+  },
 }
 </script>
 
 <template>
-  <button v-if="characterStore.subclass===null && characterStore.class!==null" @click="rollSubclass()"> Roll hit dice and subclass </button>
-  <DinamicComponent v-if="characterStore.hitDice" :data="{ hitDice: characterStore.hitDice }"/>
-  <DinamicComponent v-if="characterStore.subclass" :data="characterStore.subclass" />
+  <button
+    v-if="characterStore.className !== null && characterStore.subclassTemplate===null"
+    @click="rollSubclass()"
+  >
+    Roll subclass
+  </button>
+  <DinamicComponent
+    v-if="characterStore.subclassTemplate"
+    :data="subClass"
+  />
 </template>
 
-<style>
-</style>
+<style></style>

@@ -101,7 +101,7 @@
     "requirements": "None",
     "hitDice": "1d6",
     "maximumLevel": 14,
-    "description": "Explorers are scouts, settlers, and surveyors hardened to the challenges of the wild. Few adventuring parties would dare the wilderness without an experienced explorer to guide them.",
+    "description": "Explorers are scouts, settlers, and surveyors hardened to the challenges of the wild. Few adventuring parties would dare the wilderness without an experienced explorer to guide them. Within the Auran Empire, an explorer might be an Imperial scout from the Legions, a barbarian hunter from the northern forests of Jutland, or a settler pushing past the borders of the Empire.",
 
     "combatCharacteristics": {
       "combatProficiencies": "Explorers have weapon proficiency with all missile weapons and with all tiny, small, and medium melee weapons. They have armor proficiency with medium, light, and very light armor.",
@@ -171,6 +171,114 @@
         "blast": "13+",
         "implements": "14+",
         "spells": "15+",
+        "attackThrow": "9+"
+      }
+    ]
+  },
+  "mage": {
+    "keyAttribute": "INT",
+    "requirements": "None",
+    "hitDice": "1d4",
+    "maximumLevel": 14,
+    "description": "Sometimes called wizards, sorcerers, or magicians, mages study arcane secrets and cast spells. While early in their career mages have only limited power, experienced mages are able to cast a great number of powerful spells. In the Auran Empire, a mage might be a wizard steeped in the lore of the Tower of Knowledge, a sinister sorcerer of Kemesh or the Sunset Kingdoms, or a hedge wizard with strange charms and hodge-podge traditions.",
+
+    "combatCharacteristics": {
+      "combatProficiencies": "Mages have weapon proficiency with clubs, daggers, darts, and staffs. They have no armor proficiency. They have fighting style proficiency with the two-handed weapon style (allowing them to use a staff with both hands).",
+      "combatProgression": "Mages advance in attack throws and saving throws by only two points every six levels of experience. They do not gain any bonus to damage as they advance in level. They cannot cleave, regardless of their level."
+    },
+
+    "levelProgression": [
+      {
+        "level": 1,
+        "title": "Arcanist",
+        "experience": 0,
+        "hitDice": "1d4",
+        "damageBonus": "+0",
+        "abilities": [
+          {
+            "Arcane Magic": "Mages can learn and cast powerful arcane spells."
+          },
+          {
+            "Starting Equipment": "A mage starts with basic supplies for spellcasting."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Seer",
+        "experience": 2500,
+        "hitDice": "2d4",
+        "damageBonus": "+0",
+        "abilities": [
+          {
+            "Spell Progression": "Mages gain additional spells and levels of spells they can cast."
+          },
+          {
+            "Additional Proficiency": "Gain an additional class proficiency."
+          }
+        ]
+      }
+    ],
+
+    "classPowers": {
+      "startingClassPowers": [
+        {
+          "Arcane Magic": "Mages can learn and cast powerful arcane spells limited to their repertoire."
+        },
+        {
+          "Collegiate Wizardry": "Mages can identify arcane symbols, spell signatures, and trappings of their own order or other orders."
+        }
+      ]
+    },
+
+    "proficiencies": {
+      "mageProficiencyList": [
+        "Alchemy",
+        "Battle Magic",
+        "Beast Friendship",
+        "Black Lore of Zahar",
+        "Bright Lore of Aura",
+        "Counterspelling",
+        "Diplomacy",
+        "Elementalism",
+        "Engineering",
+        "Expanded Repertoire",
+        "Experimenting",
+        "Familiar",
+        "Healing",
+        "Illusion Resistance",
+        "Knowledge",
+        "Language",
+        "Loremastery",
+        "Magical Engineering",
+        "Mastery of Enchantments & Illusions",
+        "Mastery of Conjuration & Summoning",
+        "Mystic Aura",
+        "Quiet Magic",
+        "Sensing Power",
+        "Soothsaying",
+        "Transmogrification",
+        "Unflappable Casting"
+      ]
+    },
+
+    "mageAttackAndSavingThrows": [
+      {
+        "level": 1,
+        "paralysis": "13+",
+        "death": "13+",
+        "blast": "13+",
+        "implements": "14+",
+        "spells": "15+",
+        "attackThrow": "10+"
+      },
+      {
+        "level": 2,
+        "paralysis": "12+",
+        "death": "12+",
+        "blast": "12+",
+        "implements": "13+",
+        "spells": "14+",
         "attackThrow": "9+"
       }
     ]
@@ -383,114 +491,6 @@
         "Weapon Focus"
       ]
     }
-  },
-  "mage": {
-    "keyAttribute": "INT",
-    "requirements": "None",
-    "hitDice": "1d4",
-    "maximumLevel": 14,
-    "description": "Sometimes called wizards, sorcerers, or magicians, mages study arcane secrets and cast spells. While early in their career mages have only limited power, experienced mages are able to cast a great number of powerful spells. In the Auran Empire, a mage might be a wizard steeped in the lore of the Tower of Knowledge, a sinister sorcerer of Kemesh or the Sunset Kingdoms, or a hedge wizard with strange charms and hodge-podge traditions.",
-
-    "combatCharacteristics": {
-      "combatProficiencies": "Mages have weapon proficiency with clubs, daggers, darts, and staffs. They have no armor proficiency. They have fighting style proficiency with the two-handed weapon style (allowing them to use a staff with both hands).",
-      "combatProgression": "Mages advance in attack throws and saving throws by only two points every six levels of experience. They do not gain any bonus to damage as they advance in level. They cannot cleave, regardless of their level."
-    },
-
-    "levelProgression": [
-      {
-        "level": 1,
-        "title": "Arcanist",
-        "experience": 0,
-        "hitDice": "1d4",
-        "damageBonus": "+0",
-        "abilities": [
-          {
-            "Arcane Magic": "Mages can learn and cast powerful arcane spells."
-          },
-          {
-            "Starting Equipment": "A mage starts with basic supplies for spellcasting."
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "Seer",
-        "experience": 2500,
-        "hitDice": "2d4",
-        "damageBonus": "+0",
-        "abilities": [
-          {
-            "Spell Progression": "Mages gain additional spells and levels of spells they can cast."
-          },
-          {
-            "Additional Proficiency": "Gain an additional class proficiency."
-          }
-        ]
-      }
-    ],
-
-    "classPowers": {
-      "startingClassPowers": [
-        {
-          "Arcane Magic": "Mages can learn and cast powerful arcane spells limited to their repertoire."
-        },
-        {
-          "Collegiate Wizardry": "Mages can identify arcane symbols, spell signatures, and trappings of their own order or other orders."
-        }
-      ]
-    },
-
-    "proficiencies": {
-      "mageProficiencyList": [
-        "Alchemy",
-        "Battle Magic",
-        "Beast Friendship",
-        "Black Lore of Zahar",
-        "Bright Lore of Aura",
-        "Counterspelling",
-        "Diplomacy",
-        "Elementalism",
-        "Engineering",
-        "Expanded Repertoire",
-        "Experimenting",
-        "Familiar",
-        "Healing",
-        "Illusion Resistance",
-        "Knowledge",
-        "Language",
-        "Loremastery",
-        "Magical Engineering",
-        "Mastery of Enchantments & Illusions",
-        "Mastery of Conjuration & Summoning",
-        "Mystic Aura",
-        "Quiet Magic",
-        "Sensing Power",
-        "Soothsaying",
-        "Transmogrification",
-        "Unflappable Casting"
-      ]
-    },
-
-    "mageAttackAndSavingThrows": [
-      {
-        "level": 1,
-        "paralysis": "13+",
-        "death": "13+",
-        "blast": "13+",
-        "implements": "14+",
-        "spells": "15+",
-        "attackThrow": "10+"
-      },
-      {
-        "level": 2,
-        "paralysis": "12+",
-        "death": "12+",
-        "blast": "12+",
-        "implements": "13+",
-        "spells": "14+",
-        "attackThrow": "9+"
-      }
-    ]
   },
   "venturer": {
     "keyAttribute": "CHA",

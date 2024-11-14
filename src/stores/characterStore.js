@@ -12,11 +12,14 @@ export const useCharacterStore = defineStore('character', {
         { name: 'Will (WIL)', value: null, key: 'WIL', mod: null },
         { name: 'Charisma (CHA)', value: null, key: 'CHA', mod: null },
       ],
-      class: null,
-      subclass: null,
+      className: null,
+      subclassTemplate: null,
       rollHistory: [], // Add this line for roll history
       hitDice: null,
+      HP: null,
       step: null,
+      proficiencies: null,
+      startingEquipment: null,
     }
   },
   actions: {
@@ -27,12 +30,6 @@ export const useCharacterStore = defineStore('character', {
       this.attributes[index].value = value
       this.attributes[index].mod = attributeModifier(value)
     },
-    selectClass(classItem) {
-      this.class = classItem
-    },
-    selectSublass(subclassItem) {
-      this.subclass = subclassItem
-    },
     nextStep(step) {
       this.step = step
     },
@@ -41,6 +38,9 @@ export const useCharacterStore = defineStore('character', {
     nonNullAttributeCount(state) {
       return state.attributes.filter(attribute => attribute.value !== null)
         .length
+    },
+    allAttributesSelected(state) {
+      return state.attributes.every(attribute => attribute.value !== null)
     },
   },
 })

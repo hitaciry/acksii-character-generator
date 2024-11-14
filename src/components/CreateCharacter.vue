@@ -3,53 +3,53 @@ import CharacterSection from './CharacterSection.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 import Attributes from './AttributeSelector.vue'
 import Class from './ClassSelector.vue'
 import SubclassSection from './SubclassSection.vue'
+import { useCharacterStore } from '@/stores/characterStore'
+import { formatKey } from '@/utils/formatKey'
+const format = key => formatKey(key)
+const characterStore = useCharacterStore();
 </script>
 
 <template>
-  <CharacterSection >
+  <CharacterSection :isOpen="characterStore.className===null" >
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Character Attributes</template>
+    <template #heading>Character Attributes
+      <p class="green" v-if="characterStore.allAttributesSelected">
+        <template v-for="(attribute, index) in characterStore.attributes"
+      :key="index">{{ attribute.key }}:{{ attribute.value }} &nbsp;
+      </template>
+      </p>
+    </template>
     <Attributes />
   </CharacterSection>
 
-  <CharacterSection>
+  <CharacterSection :isOpen="characterStore.allAttributesSelected && characterStore.subclassTemplate === null">
     <template #icon>
       <ToolingIcon />
     </template>
-    <template #heading>Select class</template>
+    <template #heading>Select class
+      <p class="green" v-if="characterStore.className">
+        {{ format(characterStore.className)
+        }}<strong> ✔ Selected</strong>
+      </p>
+    </template>
     <Class />
   </CharacterSection>
 
-  <CharacterSection>
+  <CharacterSection :isOpen="characterStore.className!==null">
     <template #icon>
       <EcosystemIcon />
     </template>
-    <template #heading>Roll subclass and HP</template>
+    <template #heading>Roll subclass
+      <p class="green" v-if="characterStore.subclassTemplate">
+        {{ format(characterStore.subclassTemplate)
+        }}<strong> ✔ Selected</strong>
+      </p>
+    </template>
     <SubclassSection />
-  </CharacterSection>
-
-  <CharacterSection>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-   
-  </CharacterSection>
-
-  <CharacterSection>
-    <template #icon>
-      <SupportIcon />
-    </template>
-    <template #heading>Support </template>
-
-   
   </CharacterSection>
 </template>

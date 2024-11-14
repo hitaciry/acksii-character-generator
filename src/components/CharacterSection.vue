@@ -1,27 +1,64 @@
 <template>
   <div class="item">
-    <i>
+    <i @click="toggleExpand">
       <slot name="icon"></slot>
     </i>
-    <div class="details">
-      <h3>
+    <div @click="toggleExpand" class="header">
+      <!-- Add click to toggle on heading -->
+      <span>
         <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+      </span>
+      <span class="arrow">
+        <MdRoundExpandLess v-if="internalIsOpen" />
+        <MdRoundExpandMore v-else />
+      </span>
     </div>
   </div>
+  <div v-if="internalIsOpen">
+    <!-- Show content conditionally based on isOpen -->
+    <slot></slot>
+  </div>
 </template>
+
+<script>
+import { MdRoundExpandLess } from '@kalimahapps/vue-icons'
+import { MdRoundExpandMore } from '@kalimahapps/vue-icons'
+export default {
+  components: {
+    MdRoundExpandLess,
+    MdRoundExpandMore,
+  },
+  props: {
+    isOpen: {
+      type: Boolean,
+      default: false, // Default to false if not provided
+    },
+  },
+  data() {
+    return {
+      internalIsOpen: this.isOpen, // Initialize with the prop value
+    }
+  },
+  methods: {
+    toggleExpand() {
+      this.internalIsOpen = !this.internalIsOpen // Toggle internal state
+    },
+  },
+  watch: {
+    // Watch for changes to the prop to update internal state
+    isOpen(newVal) {
+      this.internalIsOpen = newVal
+    },
+  },
+}
+</script>
 
 <style scoped>
 .item {
   margin-top: 2rem;
   display: flex;
   position: relative;
-}
-
-.details {
-  flex: 1;
-  margin-left: 1rem;
+  cursor: pointer; /* Change cursor to indicate clickability */
 }
 
 i {
@@ -33,60 +70,19 @@ i {
   color: var(--color-text);
 }
 
-@media (max-width: 600px) {
-  i {
-    display: none; /* Hide icons on mobile devices */
-  }
-}
-
-h3 {
+.header {
+  flex: 1;
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
+  margin-left: 1rem;  
   color: var(--color-heading);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
 }
-
-@media (min-width: 1024px) {
-  .item {
-    margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-  }
-
-  i {
-    top: calc(50% - 25px);
-    left: -26px;
-    position: absolute;
-    border: 1px solid var(--color-border);
-    background: var(--color-background);
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-  }
-
-  .item:before {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: 0;
-    bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:after {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: 0;
-    top: calc(50% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:first-of-type:before {
-    display: none;
-  }
-
-  .item:last-of-type:after {
-    display: none;
-  }
+.arrow {
+  margin-left: 10px;
 }
 </style>
