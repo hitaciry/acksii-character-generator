@@ -3,11 +3,11 @@
     <div class="chat-container" v-if="isOpen">
       <div class="chat-header">
         <h2>Dice Roller</h2>
-        <button @click="toggleChat" class="close-button">X</button>
+        <Button @click="toggleChat">X</Button>
       </div>
       <div class="chat-body">
         <input v-model="input" placeholder="Enter like '1d6'" />
-        <button @click="rollTheDice">Roll</button>
+        <Button @click="rollTheDice">Roll</Button>
         <div v-if="result">
           <h3>Results:</h3>
           <p>{{ result }}</p>
@@ -25,9 +25,9 @@
       </div>
     </div>
 
-    <button class="fab" @click="toggleChat">
+    <Button class="fab" @click="toggleChat">
       <IconFabDice />
-    </button>
+    </Button>
   </div>
 </template>
 

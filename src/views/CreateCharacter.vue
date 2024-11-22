@@ -1,11 +1,11 @@
 <script setup>
-import CharacterSection from './CharacterSection.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import Attributes from './AttributeSelector.vue'
-import Class from './ClassSelector.vue'
-import SubclassSection from './SubclassSection.vue'
+import CharacterSection from '@/components/CharacterSection.vue'
+import DocumentationIcon from '@/components/icons/IconDocumentation.vue'
+import ToolingIcon from '@/components/icons/IconTooling.vue'
+import EcosystemIcon from '@/components/icons/IconEcosystem.vue'
+import Attributes from '@/components/AttributeSelector.vue'
+import Class from '@/components/ClassSelector.vue'
+import SubclassSection from '@/components/SubclassSection.vue'
 import { useCharacterStore } from '@/stores/characterStore'
 import { formatKey } from '@/utils/formatKey'
 const format = key => formatKey(key)

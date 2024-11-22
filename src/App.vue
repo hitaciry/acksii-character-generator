@@ -11,7 +11,8 @@ import ResetFab from './components/ResetFab.vue';
       <Header msg="ACKSII Character generator" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/">Create character</RouterLink>
+        <RouterLink to="/create-spell">Create spell</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>

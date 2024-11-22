@@ -8,33 +8,22 @@
       <span>{{ attribute.name }}</span>
       <span v-if="attribute.value !== null">{{ attribute.value }}</span>
       <span v-if="attribute.value !== null">({{ attribute.mod }})</span>
-      <button @click="generateAttribute(index)" v-if="attribute.value === null">
+      <Button @click="generateAttribute(index)" v-if="attribute.value === null">
         Roll
-      </button>
+      </Button>
     </div>
   </div>
 </template>
 
-<script>
+<script setup>
 import { rollAttribute } from '../utils/diceRoller'
 import { useCharacterStore } from '../stores/characterStore'
-
-export default {
-  setup() {
-    const characterStore = useCharacterStore()
-    const generateAttribute = index =>
-      characterStore.setAttribute(
-        index,
-        rollAttribute(characterStore.nonNullAttributeCount),
-      )
-    const nextStep = () => characterStore.nextStep('Select class')
-    return {
-      characterStore,
-      generateAttribute,
-      nextStep
-    }
-  },
-}
+const characterStore = useCharacterStore()
+const generateAttribute = index =>
+  characterStore.setAttribute(
+    index,
+    rollAttribute(characterStore.nonNullAttributeCount),
+  )
 </script>
 
 <style scoped>
@@ -49,9 +38,5 @@ export default {
 }
 .attribute-row span {
   flex: 1;
-}
-
-button {
-  padding: 5px 10px;
 }
 </style>

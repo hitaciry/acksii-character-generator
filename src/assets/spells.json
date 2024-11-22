@@ -1,0 +1,185 @@
+{
+  "blast": {
+    "effects": {
+      "damageEffects": [
+        { "label": "1d4", "cost": 20 },
+        { "label": "1d6", "cost": 27 },
+        { "label": "1d6+1", "cost": 33 },
+        { "label": "1d8", "cost": 35 },
+        { "label": "1d10", "cost": 44 },
+        { "label": "1d12", "cost": 52 }
+      ],
+      "additionalEffects": [
+        { "label": "Halve target’s movement rate for duration", "cost": 5 },
+        { "label": "Deaf or queasy for duration", "cost": 5 },
+        { "label": "Ignite flammable object instantaneously", "cost": 10 },
+        { "label": "Knockdown target instantaneously", "cost": 10 },
+        { "label": "Choking/vomiting for duration", "cost": 10 },
+        { "label": "Blindness for duration", "cost": 15 },
+        { "label": "Dehydration instantaneously", "cost": 15 },
+        { "label": "Gusting (as per gale of wind) for duration", "cost": 20 },
+        { "label": "Destroy sunderable object instantaneously", "cost": 20 },
+        { "label": "Smash target (50 – 80 shp) instantaneously", "cost": 85 },
+        { "label": "Obliterate target (250 shp) instantaneously", "cost": 255 }
+      ]
+    },
+    "modifiers": {
+      "maxDamage": [
+        { "label": "1d", "multiplier": 0.1 },
+        { "label": "2d", "multiplier": 0.25 },
+        { "label": "3d", "multiplier": 0.33 },
+        { "label": "4d", "multiplier": 0.5 },
+        { "label": "5d", "multiplier": 0.7 },
+        { "label": "6d", "multiplier": 0.8 },
+        { "label": "7d", "multiplier": 0.9 },
+        { "label": "8d", "multiplier": 0.97 },
+        { "label": "none", "multiplier": 1 }
+      ],
+      "effect": [
+        {
+          "label": "Spell draws on specific environmental power source",
+          "multiplier": 0.85
+        },
+        {
+          "label": "Shaded spell draws on specific enviro. power source",
+          "multiplier": 0.67
+        },
+        {
+          "label": "Spell draws on general environment (outdoors, etc.)",
+          "multiplier": 0.9
+        },
+        {
+          "label": "Shaded spell draws on general enviro. power source",
+          "multiplier": 0.75
+        },
+        { "label": "Blast deals double damage to undead", "multiplier": 1.5 },
+        {
+          "label": "Blast is elemental (fire, earth, water, air)",
+          "multiplier": 1
+        }
+      ],
+      "range": [
+        { "label": "0’ / Touch", "multiplier": 0.4 },
+        { "label": "30’", "multiplier": 0.5 },
+        { "label": "45’", "multiplier": 0.6 },
+        { "label": "60’", "multiplier": 0.65 },
+        { "label": "90’", "multiplier": 0.7 },
+        { "label": "120’", "multiplier": 0.8 },
+        { "label": "180’", "multiplier": 0.9 },
+        { "label": "225’", "multiplier": 1 },
+        { "label": "270’", "multiplier": 1.1 },
+        { "label": "360’", "multiplier": 1.2 },
+        { "label": "480’", "multiplier": 1.5 }
+      ],
+      "duration": [
+        { "label": "Instantaneous", "multiplier": 1 },
+        { "label": "1 round", "multiplier": 1.1 },
+        {
+          "label": "Concentration up to maximum 1 round per level",
+          "multiplier": 2
+        },
+        {
+          "label": "Concentration or until target makes save",
+          "multiplier": 2
+        },
+        { "label": "Until target makes its saving throw", "multiplier": 3 },
+        { "label": "1 round per level", "multiplier": 4 },
+        { "label": "Concentration", "multiplier": 4 }
+      ],
+      "targetByNumber": [
+        { "label": "1 creature", "multiplier": 1 },
+        { "label": "1 creature + 1 per 5 additional levels", "multiplier": 2 },
+        { "label": "1 creature + 2 per 5 additional levels", "multiplier": 3 },
+        { "label": "1 creature + 1 per 2 additional levels", "multiplier": 4 },
+        {
+          "label": "1 creature per level within 30’ diameter",
+          "multiplier": 5
+        },
+        { "label": "1 creature per level", "multiplier": 7 }
+      ],
+      "targetByArea": [
+        { "label": "5’ diameter sphere", "multiplier": 1 },
+        { "label": "10’ diameter sphere", "multiplier": 1.25 },
+        { "label": "10’ long × 10’ wide × 10’ deep cube", "multiplier": 1.5 },
+        { "label": "10’ diameter × 30’ tall cylinder", "multiplier": 1.5 },
+        { "label": "15’ diameter sphere", "multiplier": 1.5 },
+        { "label": "60’ long × 5’ wide line", "multiplier": 1.75 },
+        { "label": "20’ diameter sphere", "multiplier": 2 },
+        { "label": "20’ long × 20’ wide × 20’ deep cube", "multiplier": 2.25 },
+        { "label": "20’ diameter, 40’ high cylinder", "multiplier": 2.25 },
+        { "label": "40’ long × 20’ wide cone", "multiplier": 3.25 },
+        { "label": "120’ long × 5’ wide line", "multiplier": 3.5 },
+        { "label": "25’ diameter sphere", "multiplier": 4 },
+        { "label": "30’ diameter, 10’ high cylinder", "multiplier": 4 },
+        { "label": "60’ long × 10’ wide cone", "multiplier": 4.5 },
+        { "label": "30’ diameter sphere", "multiplier": 5 },
+        { "label": "60’ long × 30’ wide cone (or gaze)", "multiplier": 6 },
+        { "label": "40’ long × 40’ wide × 10’ tall cloud", "multiplier": 8 },
+        { "label": "90’ long × 30’ wide cone", "multiplier": 8 }
+      ],
+      "targeting": [
+        {
+          "label": "Target must behold caster or spell effect",
+          "multiplier": 0.7
+        },
+        {
+          "label": "Target must be in earshot of caster or spell effect",
+          "multiplier": 0.9
+        },
+        {
+          "label": "Creatures with fewest HD are affected first",
+          "multiplier": 0.8
+        },
+        {
+          "label": "Pair of attack throws required to hit target",
+          "multiplier": 0.5
+        },
+        { "label": "Attack throw required to hit target", "multiplier": 0.7 },
+        {
+          "label": "Creatures with 9HD or more cannot be targeted",
+          "multiplier": 0.5
+        },
+        {
+          "label": "Creatures with 5HD or more cannot be targeted",
+          "multiplier": 0.6
+        },
+        {
+          "label": "Creatures with 2HD or more cannot be targeted",
+          "multiplier": 0.7
+        },
+        {
+          "label": "Only affects specific animal (e.g. dogs)",
+          "multiplier": 0.7
+        },
+        {
+          "label": "Only affects creatures that died on battlefield",
+          "multiplier": 0.7
+        },
+        { "label": "Only affects undead", "multiplier": 0.8 },
+        { "label": "Only affects humanoids", "multiplier": 0.8 },
+        { "label": "Only affects living creatures", "multiplier": 0.85 },
+        {
+          "label": "Animated creature does not crumble to dust after spell",
+          "multiplier": 1
+        },
+        {
+          "label": "Able to target object (10’ x 10’ x 10’)",
+          "multiplier": 1.2
+        }
+      ],
+      "savingThrow": [
+        { "label": "No saving throw permitted", "multiplier": 1 },
+        {
+          "label": "Saving throw reduces spell effect by half",
+          "multiplier": 0.7
+        },
+        { "label": "Saving throw avoids spell effect", "multiplier": 0.5 }
+      ],
+      "source": [
+        { "label": "arcane", "multiplier": 1 },
+        { "label": "divine", "multiplier": 2.25 },
+        { "label": "eldritch", "multiplier": 3 }
+      ]
+    }
+  }
+}

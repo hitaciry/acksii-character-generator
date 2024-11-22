@@ -1,23 +1,13 @@
 <template>
-  <button class="fab" @click="characterStore.$reset()">
+  <Button class="fab" @click="characterStore.$reset()">
     <CaReset />
-  </button>
+  </Button>
 </template>
 
-<script>
-import { useCharacterStore } from '../stores/characterStore' // Importing the store
-import { CaReset } from '@kalimahapps/vue-icons';
-export default {
-  components: {
-    CaReset,
-  },
-  setup() {
-    const characterStore = useCharacterStore()
-    return{
-      characterStore
-    }
-  },
-}
+<script setup>
+import { useCharacterStore } from '@/stores/characterStore' // Importing the store
+import { CaReset } from '@kalimahapps/vue-icons'
+const characterStore = useCharacterStore()
 </script>
 
 <style scoped>
