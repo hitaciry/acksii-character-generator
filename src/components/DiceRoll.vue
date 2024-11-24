@@ -6,8 +6,9 @@
         <Button @click="toggleChat">X</Button>
       </div>
       <div class="chat-body">
-        <input v-model="input" placeholder="Enter like '1d6'" />
+        <InputText v-model="input" placeholder="Enter like '1d6'" />
         <Button @click="rollTheDice">Roll</Button>
+
         <div v-if="result">
           <h3>Results:</h3>
           <p>{{ result }}</p>
@@ -15,7 +16,7 @@
         <div v-if="error" style="color: red">
           {{ error }}
         </div>
-        <div></div>
+
         <h3>Roll History:</h3>
         <div class="roll-history">
           <div v-for="(roll, index) in rollHistory" :key="index">
@@ -24,52 +25,45 @@
         </div>
       </div>
     </div>
-
-    <Button class="fab" @click="toggleChat">
-      <IconFabDice />
-    </Button>
   </div>
 </template>
 
-<script>
-import { rollDice } from '../utils/diceRoller'
-import IconFabDice from './icons/IconFabDice.vue'
-import { useCharacterStore } from '../stores/characterStore' // Importing the store
-export default {
-  components: {
-    IconFabDice,
-  },
-  setup() {
-    const characterStore = useCharacterStore()
+<script setup>
+import { ref, defineEmits, defineProps } from 'vue';
+import { rollDice } from '../utils/diceRoller';
+import { useCharacterStore } from '../stores/characterStore'; 
 
-    return {
-      rollHistory: characterStore.rollHistory.reverse()
-    }
-  },
-  data() {
-    return {
-      isOpen: false,
-      input: '',
-      result: null,
-      error: null,
-    }
-  },
-  methods: {
-    toggleChat() {
-      this.isOpen = !this.isOpen
-    },
-    rollTheDice() {
-      try {
-        const { rolls, total } = rollDice(this.input)
-        this.result = `Rolled: ${this.input} - Rolls: ${rolls.join(', ')} (Total: ${total})`
-        this.error = null
-      } catch (err) {
-        this.error = err.message
-        this.results = null
-      }
-    },
-  },
-}
+// Accept props
+defineProps({
+  isOpen: {
+    type: Boolean,
+    required: true
+  }
+});
+
+// Emit event to inform parent that the state has been toggled
+const emit = defineEmits(['update:isOpen']);
+
+const characterStore = useCharacterStore();
+const rollHistory = characterStore.rollHistory.reverse();
+const input = ref('');
+const result = ref(null);
+const error = ref(null);
+
+const toggleChat = () => {
+  emit('update:isOpen', false); // Emit the updated state to the parent
+};
+
+const rollTheDice = () => {
+  try {
+    const { rolls, total } = rollDice(input.value);
+    result.value = `Rolled: ${input.value} - Rolls: ${rolls.join(', ')} (Total: ${total})`;
+    error.value = null;
+  } catch (err) {
+    error.value = err.message;
+    result.value = null; // Reset result in case of error
+  }
+};
 </script>
 
 <style scoped>
@@ -95,27 +89,6 @@ export default {
 
 .chat-body {
   padding: 10px;
-}
-
-.fab {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 56px;
-  height: 56px;
-  background: transparent; /* Transparent background */
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.fab svg {
-  fill: var(--color-text); /* Icon color */
-  width: 55px; /* Set size */
-  height: 55px; /* Set size */
 }
 
 .roll-history {

@@ -16,10 +16,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@kalimahapps/vue-icons": "^1.7.1",
     "@primevue/themes": "^4.2.2",
     "axios": "^1.7.7",
     "pinia": "^2.2.4",
+    "primeicons": "^7.0.0",
     "primevue": "^4.2.2",
     "vue": "^3.5.12",
     "vue-router": "^4.4.5"

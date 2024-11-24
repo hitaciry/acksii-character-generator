@@ -10,6 +10,7 @@ import Button from 'primevue/button'
 import MultiSelect from 'primevue/multiselect'
 import Select from 'primevue/select'
 import FloatLabel from 'primevue/floatlabel'
+import { InputNumber, InputText} from 'primevue'
 
 import App from './App.vue'
 import router from './router'
@@ -31,6 +32,8 @@ app.component('Button', Button)
 app.component('MultiSelect', MultiSelect)
 app.component('Select', Select)
 app.component('FloatLabel', FloatLabel)
+app.component('InputText', InputText)
+app.component('InputNumber', InputNumber)
 app.use(router)
 
 app.mount('#app')

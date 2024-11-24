@@ -16,6 +16,11 @@ const router = createRouter({
       component: SpellGenerator, // Associating the route with the component
     },
     {
+      path: '/character-sheet',
+      name: 'character-sheet',
+      component: () => import('../views/CharacterSheet.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),

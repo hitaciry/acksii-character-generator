@@ -1,23 +1,37 @@
 <template>
-  <div class="attributes-container">
-    <div
-      v-for="(attribute, index) in characterStore.attributes"
-      :key="index"
-      class="attribute-row"
-    >
-      <span>{{ attribute.name }}</span>
-      <span v-if="attribute.value !== null">{{ attribute.value }}</span>
-      <span v-if="attribute.value !== null">({{ attribute.mod }})</span>
-      <Button @click="generateAttribute(index)" v-if="attribute.value === null">
-        Roll
-      </Button>
-    </div>
-  </div>
+    <DataTable :value="characterStore.attributes" size="small">
+      <Column field="name" header="Name"></Column>
+      <Column field="value" header="Value"></Column>
+      <Column field="mod" header="Modifier"></Column>
+      <Column header="Roll">
+        <template #body="attribute">
+          <Button
+            @click="generateAttribute(attribute.index)"
+            :disabled="attribute.data.value !== null"
+          >
+            Roll
+          </Button>
+        </template>
+      </Column>
+      <template #footer>
+        Total attributes modifiers sum: {{ characterStore.modSum }}.
+        <span
+          v-if="
+            characterStore.allAttributesSelected && characterStore.modSum < 0
+          "
+          class="text-red-400"
+        >
+          The rules suggest to reroll attributes
+        </span>
+      </template>
+    </DataTable>
 </template>
 
 <script setup>
 import { rollAttribute } from '../utils/diceRoller'
 import { useCharacterStore } from '../stores/characterStore'
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
 const characterStore = useCharacterStore()
 const generateAttribute = index =>
   characterStore.setAttribute(
@@ -25,18 +39,3 @@ const generateAttribute = index =>
     rollAttribute(characterStore.nonNullAttributeCount),
   )
 </script>
-
-<style scoped>
-.attributes-container {
-  margin: 20px;
-}
-
-.attribute-row {
-  display: flex;
-  justify-content: flex-start;
-  margin: 10px 0;
-}
-.attribute-row span {
-  flex: 1;
-}
-</style>

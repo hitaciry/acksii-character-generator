@@ -1,8 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/GreetingHeader.vue'
-import DiceRoll from './components/DiceRoll.vue'
-import ResetFab from './components/ResetFab.vue';
 </script>
 
 <template>
@@ -12,6 +10,7 @@ import ResetFab from './components/ResetFab.vue';
 
       <nav>
         <RouterLink to="/">Create character</RouterLink>
+        <RouterLink to="/character-sheet">Character sheet</RouterLink>
         <RouterLink to="/create-spell">Create spell</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
@@ -19,8 +18,6 @@ import ResetFab from './components/ResetFab.vue';
   </header>
 
   <RouterView />
-  <DiceRoll />
-  <ResetFab />
 </template>
 
 <style scoped>

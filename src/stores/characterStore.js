@@ -17,7 +17,7 @@ export const useCharacterStore = defineStore('character', {
       rollHistory: [], // Add this line for roll history
       hitDice: null,
       HP: null,
-      step: null,
+      name: null,
       proficiencies: null,
       startingEquipment: null,
     }
@@ -42,6 +42,9 @@ export const useCharacterStore = defineStore('character', {
     allAttributesSelected(state) {
       return state.attributes.every(attribute => attribute.value !== null)
     },
+    modSum(state){
+      return state.attributes.reduce((a, n) => a + n.mod, 0)
+    }
   },
 })
 
