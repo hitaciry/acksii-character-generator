@@ -2588,6 +2588,370 @@
         "Alchemy", "Arcane Dabbling", "Beast Friendship", "Black Lore of Zahar", "Contemplation", "Divine Blessing", "Divine Health", "Elementalism", "Elven Bloodline", "Expanded Repertoire", "Familiar", "Illusion Resistance", "Laying on Hands", "Loremastery", "Magical Engineering", "Magical Music", "Mastery of Enchantments & Illusions", "Mystic Aura", "Naturalism", "Passing without Trace", "Poisoning", "Prestidigitation", "Prophecy", "Quiet Magic", "Sensing Power", "Soothsaying", "Transmogrification", "Unflappable Casting"
       ]
     }
+  },
+  "dwarvenCraftpriest": {
+    "keyAttribute": "WIL",
+    "requirements": "CON 9",
+    "hitDice": "1d6",
+    "maximumLevel": 10,
+    "description": "Nothing is so revered among the dwarven people as craftsmanship. A dwarf's work is his life, and the spirits of great dwarven artisans are believed to live on forever in their masterpieces. The veneration of these relics falls to the care of a caste of dwarves known as craftpriests. While most craftpriests attend to the shrines and monuments of their clan, young craftpriests are sometimes sent forth to recover monuments to the glorious past from the ancient ruins and wastelands of the world.",
+    "combatCharacteristics": {
+      "combatProficiencies": ["battle axes", "great axes", "hand axes", "clubs", "flails", "maces", "morning stars", "warhammers"],
+      "armorProficiency": "all armor",
+      "fightingStyleProficiency": ["weapon and shield", "two-handed weapon"],
+      "combatProgression": {
+        "attackThrowsAndSavingThrows": "two points every four levels",
+        "cleave": "once per round per every two class levels (rounded down)",
+        "bonusDamage": "none"
+      }
+    },
+    "startingClassPowers": [
+      {
+        "name": "Attention to Detail",
+        "description": "Craftpriests gain a +3 bonus on proficiency throws for any proficiencies they learn."
+      },
+      {
+        "name": "Crafting",
+        "description": "Every craftpriest is a master in a particular type of craft, such as armor-making, leatherworking, weapon-smithing, etc. Craftpriests can produce 40gp worth of items per month and supervise 2 journeymen and 4 apprentices in their craft. When examining works of his craft, craftpriests can identify masterwork items, rare materials, and famous artisans with a proficiency throw of 2+ on 1d20."
+      },
+      {
+        "name": "Rebuke Undead",
+        "description": "Craftpriests can rebuke undead as crusaders of their class level. In order to rebuke undead, they must be equipped with a holy symbol representing the ancestor or relic they venerate."
+      },
+      {
+        "name": "Studious Divine Magic",
+        "description": "By invoking the rites and rituals of their venerable ancestors, craftpriests can cast divine spells. Craftpriests follow the same spell progression and use the same rules for learning and casting spells as mages. They record their repertoires of spells in spell books and can learn new spells from scribing scrolls or studying other divine spell books. They select their spells from the divine spell list, rather than the arcane spell list, however, and cannot learn or cast spells found in arcane spell books."
+      },
+      {
+        "name": "Theology",
+        "description": "Craftpriests are trained in the rites and rituals of the dwarven faith and are broadly knowledgeable about other races’ and cultures’ religions. They can acquire congregants through proselytizing. They can automatically identify religious symbols, trappings, and holy days of the dwarven faith, and recognize those of other faiths with a proficiency throw of 8+ on 1d20."
+      }
+    ],
+    "levelProgression": [
+      {
+        "level": 1,
+        "title": "Craft-Catechist",
+        "experience": 0,
+        "hitDice": "1d6",
+        "spellProgression": { "1": 1, "2": "-", "3": "-", "4": "-", "5": "-" }
+      },
+      {
+        "level": 2,
+        "title": "Craft-Acolyte",
+        "experience": 2400,
+        "hitDice": "2d6",
+        "spellProgression": { "1": 2, "2": "-", "3": "-", "4": "-", "5": "-" }
+      },
+      {
+        "level": 3,
+        "title": "Craft-Priest",
+        "experience": 4800,
+        "hitDice": "3d6",
+        "spellProgression": { "1": 2, "2": 1, "3": "-", "4": "-", "5": "-" }
+      },
+      {
+        "level": 4,
+        "title": "Craft-Curate",
+        "experience": 9600,
+        "hitDice": "4d6",
+        "spellProgression": { "1": 2, "2": 2, "3": "-", "4": "-", "5": "-" }
+      },
+      {
+        "level": 5,
+        "title": "Craft-Vicar",
+        "experience": 19200,
+        "hitDice": "5d6",
+        "spellProgression": { "1": 2, "2": 2, "3": 1, "4": "-", "5": "-" }
+      },
+      {
+        "level": 6,
+        "title": "Craft-Rector",
+        "experience": 38400,
+        "hitDice": "6d6",
+        "spellProgression": { "1": 2, "2": 2, "3": 2, "4": "-", "5": "-" }
+      },
+      {
+        "level": 7,
+        "title": "Craft-Prelate",
+        "experience": 75000,
+        "hitDice": "7d6",
+        "spellProgression": { "1": 3, "2": 2, "3": 2, "4": 1, "5": "-" }
+      },
+      {
+        "level": 8,
+        "title": "Craft-Bishop",
+        "experience": 150000,
+        "hitDice": "8d6",
+        "spellProgression": { "1": 3, "2": 3, "3": 2, "4": 2, "5": "-" }
+      },
+      {
+        "level": 9,
+        "title": "Craft-Lord",
+        "experience": 280000,
+        "hitDice": "9d6",
+        "spellProgression": { "1": 3, "2": 3, "3": 3, "4": 2, "5": 1 }
+      },
+      {
+        "level": 10,
+        "title": "Craft-Lord, 10th level",
+        "experience": 410000,
+        "hitDice": "9d6 + 2*",
+        "spellProgression": { "1": 3, "2": 3, "3": 3, "4": 3, "5": 2 }
+      }
+    ],
+    "additionalClassPowers": [
+      {
+        "level": 5,
+        "name": "Minor Magical Research",
+        "description": "The craftpriest can research spells, scribe scrolls, and brew potions."
+      },
+      {
+        "level": 9,
+        "name": "Major Magical Research",
+        "description": "The craftpriest can create permanent magic items, such as weapons, rings, and staffs. He can also craft magical constructs such as golems."
+      },
+      {
+        "level": 9,
+        "name": "Vault",
+        "description": "By acquiring a vault worth at least 15,000gp, the craftpriest can attract dwarves to his service. 1d4+1 × 10 dwarven mercenaries and 1d6 dwarven craftpriests of 1st – 3rd level arrive to serve him as followers within 1d3 months of him acquiring the vault. If the craftpriest has already acquired a vault, the followers arrive to serve him within 1d3 months of him reaching 9th level."
+      }
+    ],
+    "racialTraits": [
+      {
+        "name": "Dwarf Tongues",
+        "description": "Dwarves can speak the Common and Dwarvish tongues and, because of their frequent interaction underground with beastmen, can also speak Goblin, Gnome, and Kobold."
+      },
+      {
+        "name": "Hardy",
+        "description": "Dwarves are tough. The target values for all their Blast saving throws are improved by 3, while the target values for all their other saving throws are improved by 4."
+      },
+      {
+        "name": "Sensitivity to Rock and Stone",
+        "description": "Dwarves gain a +1 bonus to surprise rolls when underground. When using Adventuring proficiency to search or listen, they succeed on a proficiency throw of 14+ (instead of the usual 18+). If separately proficient in Searching they gain a +4 bonus to their throw instead. If separately proficient in Listening, they gain a +2 bonus to their throw instead."
+      }
+    ],
+    "codeOfBehavior": [
+      "The craftpriest must always display a holy symbol indicating the relic he venerates somewhere on his person when in public.",
+      "The craftpriest must sing hymns on high holy days each week. Singing hymns requires one hour of ancillary activity.",
+      "The craftpriest must only use the traditional weapons of the dwarves.",
+      "If the craftpriest discovers a dwarven relic in the hands of outsiders, he must recover the relic by any means necessary.",
+      "The craftpriest must not use his divine magic to harm or hinder fellow dwarves, unless ordered to do so by a superior during a time when his vault is at war with another vault."
+    ],
+    "classProficiencies": {
+      "progression": {
+        "classProficiency": { "1st": 1, "4th": 1, "8th": 1 },
+        "generalProficiency": { "1st": 1, "5th": 1, "9th": 1 }
+      },
+      "dwarvenCraftpriestProficiencyList": [
+        "Alchemy",
+        "Battle Magic",
+        "Caving",
+        "Collegiate Wizardry",
+        "Contemplation",
+        "Craft",
+        "Diplomacy",
+        "Divine Blessing",
+        "Divine Health",
+        "Dwarven Brewing",
+        "Engineering",
+        "Expanded Repertoire",
+        "Experimenting",
+        "Fighting Style Specialization",
+        "Goblin-Slaying",
+        "Healing",
+        "Illusion Resistance",
+        "Knowledge",
+        "Laying on Hands",
+        "Loremastery",
+        "Magical Engineering",
+        "Mapping",
+        "Prestidigitation",
+        "Profession (judge)",
+        "Prophecy",
+        "Quiet Magic",
+        "Reliquarianism",
+        "Righteous Rebuke",
+        "Sensing Evil",
+        "Siege Engineering",
+        "Theology",
+        "Unflappable Casting",
+        "Weapon Focus"
+      ]
+    }
+  },
+  "dwarvenVaultguard": {
+    "keyAttribute": "STR",
+    "requirements": "CON 9",
+    "hitDice": "1d8",
+    "maximumLevel": 13,
+    "description": "Dwarves trained to defend their race’s underground vault from the endless hordes that threaten it are called vaultguards. Though most vaultguards are born, live and die in the vault, from time to time a young vaultguard will be dispatched to foreign realms on a warrior’s pilgrimage. The few vaultguards who return from such pilgrimages bring gold and glory to their clans, often leading them to found new vaults and become great lords.",
+    "combatCharacteristics": {
+      "combatProficiencies": ["all weapons except long bows or two-handed swords"],
+      "armorProficiency": "all armor",
+      "fightingStyleProficiency": ["weapon and shield", "two-handed weapon", "dual weapon"],
+      "combatProgression": {
+        "attackThrowsAndSavingThrows": "two points every three levels",
+        "bonusDamage": "+1 at 1st level, +1 at 3rd, 6th, 9th, and 12th level",
+        "cleave": "once per round per class level"
+      }
+    },
+    "startingClassPowers": [
+      {
+        "name": "Manual of Arms",
+        "description": "The vaultguard is highly experienced in military discipline, physical fitness, and weapon drill. He can automatically identify the battle standards, equipment, great captains, military slang, and rank insignia of his clan and vault. He can identify those of other clans, vaults, or realms with a proficiency throw of 11+."
+      }
+    ],
+    "additionalClassPowers": [
+      {
+        "level": 5,
+        "name": "Battlefield Prowess",
+        "description": "The vaultguard’s presence inspires troops he leads. Any henchmen and mercenaries hired by the vaultguard gain a +1 bonus to their morale score whenever he personally leads them. This bonus stacks with any modifiers from the vaultguard’s Charisma or proficiencies."
+      },
+      {
+        "level": 9,
+        "name": "Vault",
+        "description": "By acquiring a vault worth at least 15,000gp, the vaultguard can attract dwarves to his service. 3d6 × 10 1st level dwarven mercenaries arrive to serve him as followers within 1d3 months of him acquiring the vault. If the vaultguard already acquired a vault, the followers arrive to serve him within 1d3 months of him reaching 9th level. The vaultguard must pay his followers the ordinary rates for mercenaries and henchmen or they leave his service."
+      }
+    ],
+    "racialTraits": [
+      {
+        "name": "Dwarf Tongues",
+        "description": "Dwarves can speak the Common and Dwarvish tongues and, because of their frequent interaction underground with beastmen, can also speak Goblin, Gnome, and Kobold."
+      },
+      {
+        "name": "Hardy",
+        "description": "Dwarves are tough. The target values for all their Blast saving throws are improved by 3, while the target values for all their other saving throws are improved by 4."
+      },
+      {
+        "name": "Sensitivity to Rock and Stone",
+        "description": "Dwarves gain a +1 bonus to surprise rolls when underground. When using Adventuring proficiency to search or listen, they succeed on a proficiency throw of 14+ (instead of the usual 18+). If separately proficient in Searching they gain a +4 bonus to their throw instead. If separately proficient in Listening, they gain a +2 bonus to their throw instead."
+      }
+    ],
+    "levelProgression": [
+      {
+        "level": 1,
+        "title": "Sentry",
+        "experience": 0,
+        "hitDice": "1d8",
+        "damageBonus": "+1"
+      },
+      {
+        "level": 2,
+        "title": "Warden",
+        "experience": 2200,
+        "hitDice": "2d8",
+        "damageBonus": "+1"
+      },
+      {
+        "level": 3,
+        "title": "Shieldbearer",
+        "experience": 4400,
+        "hitDice": "3d8",
+        "damageBonus": "+2"
+      },
+      {
+        "level": 4,
+        "title": "Defender",
+        "experience": 8800,
+        "hitDice": "4d8",
+        "damageBonus": "+2"
+      },
+      {
+        "level": 5,
+        "title": "Sentinel",
+        "experience": 17600,
+        "hitDice": "5d8",
+        "damageBonus": "+2"
+      },
+      {
+        "level": 6,
+        "title": "Guardian",
+        "experience": 35200,
+        "hitDice": "6d8",
+        "damageBonus": "+3"
+      },
+      {
+        "level": 7,
+        "title": "Champion",
+        "experience": 70000,
+        "hitDice": "7d8",
+        "damageBonus": "+3"
+      },
+      {
+        "level": 8,
+        "title": "Vaultguard",
+        "experience": 140000,
+        "hitDice": "8d8",
+        "damageBonus": "+3"
+      },
+      {
+        "level": 9,
+        "title": "Vaultlord",
+        "experience": 270000,
+        "hitDice": "9d8",
+        "damageBonus": "+4"
+      },
+      {
+        "level": 10,
+        "title": "Vaultlord, 10th level",
+        "experience": 400000,
+        "hitDice": "9d8 + 3*",
+        "damageBonus": "+4"
+      },
+      {
+        "level": 11,
+        "title": "Vaultlord, 11th level",
+        "experience": 530000,
+        "hitDice": "9d8 + 6*",
+        "damageBonus": "+4"
+      },
+      {
+        "level": 12,
+        "title": "Vaultlord, 12th level",
+        "experience": 660000,
+        "hitDice": "9d8 + 9*",
+        "damageBonus": "+5"
+      },
+      {
+        "level": 13,
+        "title": "Vaultlord, 13th level",
+        "experience": 790000,
+        "hitDice": "9d8 + 12*",
+        "damageBonus": "+5"
+      }
+    ],
+    "classProficiencies": {
+      "progression": {
+        "classProficiency": { "1st": 1, "3rd": 1, "6th": 1, "9th": 1, "12th": 1 },
+        "generalProficiency": { "1st": 1, "5th": 1, "9th": 1, "13th": 1 }
+      },
+      "dwarvenVaultguardProficiencyList": [
+        "Alertness",
+        "Berserkergang",
+        "Blind Fighting",
+        "Caving",
+        "Combat Ferocity",
+        "Combat Reflexes",
+        "Combat Trickery (force back, knock down, overrun, sunder, wrestling)",
+        "Command",
+        "Dungeonbashing Expertise",
+        "Dwarven Brewing",
+        "Fighting Style Specialization",
+        "Goblin-Slaying",
+        "Illusion Resistance",
+        "Intimidation",
+        "Land Surveying",
+        "Leadership",
+        "Military Strategy",
+        "Mountaineering",
+        "Precise Shooting",
+        "Prospecting",
+        "Running",
+        "Siege Engineering",
+        "Vermin-Slaying",
+        "Weapon Focus"
+      ]
+    }
   }
 
 }

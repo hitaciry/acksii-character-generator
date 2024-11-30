@@ -2999,5 +2999,414 @@
         "encumbrance": "3 st with rations on horse"
       }
     }
+  ],
+  "dwarvenCraftpriest": [
+    {
+      "roll": "3-4",
+      "template": "Outcast Houseless (ex-Bathsworn)",
+      "proficiencies": [
+        "Quiet Magic",
+        "Saving",
+        "Craft (leatherworking) 3",
+        "Survival"
+      ],
+      "startingEquipment": {
+        "weapons": ["2 hand axes"],
+        "armor": [],
+        "clothing": [
+          "tattered workborn tunic and pants",
+          "rawhide leather belt",
+          "careworn low boots"
+        ],
+        "misc": [
+          "Battered prayer book with sling stone and frighten beast",
+          "backpack",
+          "1 lb garlic",
+          "tinderbox",
+          "12 torches",
+          "moldy waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "5gp",
+        "encumbrance": "4 3/6 st"
+      }
+    },
+    {
+      "roll": "5-6",
+      "template": "Runeseer Bathsworn",
+      "proficiencies": [
+        "Prophecy",
+        "Performance (chanting)",
+        "Craft (rune-carving) 3",
+        "Knowledge (astrology)"
+      ],
+      "startingEquipment": {
+        "weapons": ["hand axe"],
+        "armor": [],
+        "clothing": [
+          "charcoal grey workborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Prayer book with discern evil and word of command",
+          "carved stone holy symbol (rune-carver’s insignia)",
+          "backpack",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "5gp",
+        "encumbrance": "2 1/6 st"
+      }
+    },
+    {
+      "roll": "7-8",
+      "template": "Reliquary Guardian Bathsworn",
+      "proficiencies": [
+        "Battle Magic",
+        "Signaling",
+        "Craft (weapon-smithing) 3",
+        "Manual of Arms"
+      ],
+      "startingEquipment": {
+        "weapons": ["well-sharpened battle axe"],
+        "armor": ["leather armor"],
+        "clothing": [
+          "black workborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Prayer book with remove fear and holy circle",
+          "iron holy symbol (weaponsmith’s insignia)",
+          "backpack",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "2gp",
+        "encumbrance": "4 1/6 st"
+      }
+    },
+    {
+      "roll": "9-10",
+      "template": "Documentarian Bathsworn",
+      "proficiencies": [
+        "Loremastery",
+        "Mapping",
+        "Craft (bookbinding) 3",
+        "Knowledge (history)"
+      ],
+      "startingEquipment": {
+        "weapons": ["battle axe"],
+        "armor": ["leather armor"],
+        "clothing": [
+          "dun craftborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Beautifully-bound prayer book with discern gist and illumination",
+          "bronze holy symbol (bookbinder’s insignia)",
+          "backpack with blank parchment journal half-filled with entries",
+          "quill and ink",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "4gp",
+        "encumbrance": "4 3/6 st"
+      }
+    },
+    {
+      "roll": "11-12",
+      "template": "Reclaimer Bathsworn",
+      "proficiencies": [
+        "Magical Engineering",
+        "Knowledge (history)",
+        "Craft (stonemasonry) 3",
+        "Siege Engineering"
+      ],
+      "startingEquipment": {
+        "weapons": ["morning star with carved head"],
+        "armor": ["engraved banded plate armor"],
+        "clothing": [
+          "stone grey workborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Prayer book with counterspell and discern magic",
+          "steel holy symbol (stonemason’s insignia)",
+          "backpack",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "9gp",
+        "encumbrance": "8 st"
+      }
+    },
+    {
+      "roll": "13-14",
+      "template": "Sacrementalist Bathsworn",
+      "proficiencies": [
+        "Dwarven Brewing",
+        "Alchemy",
+        "Craft (brewing) 3",
+        "Revelry"
+      ],
+      "startingEquipment": {
+        "weapons": ["mace"],
+        "armor": ["chain mail armor"],
+        "clothing": [
+          "brown craftborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Prayer book with cure light injury and purify food and water",
+          "glass holy symbol (brewer’s insignia)",
+          "round wooden shield painted with alchemical symbols",
+          "backpack",
+          "1 flask of holy water",
+          "1 flask of military oil",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "",
+        "encumbrance": "7 3/6 st"
+      }
+    },
+    {
+      "roll": "15-16",
+      "template": "Purifier Bathsworn",
+      "proficiencies": [
+        "Righteous Rebuke",
+        "Knowledge (occult)",
+        "Craft (jewelling) 3",
+        "Alchemy"
+      ],
+      "startingEquipment": {
+        "weapons": ["mace with diamond-shaped head"],
+        "armor": ["banded plate armor"],
+        "clothing": [
+          "red and white craftborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Prayer book with holy circle and bane-rune",
+          "bejeweled holy symbol (jeweler’s insignia)",
+          "steel shield with craft insignia",
+          "backpack",
+          "1 lb garlic",
+          "flask of holy water",
+          "2 flasks of military oil",
+          "tinderbox",
+          "6 torches",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "4gp",
+        "encumbrance": "10 st"
+      }
+    },
+    {
+      "roll": "17-18",
+      "template": "Seeker Bathsworn (ex-Highborn)",
+      "proficiencies": [
+        "Sensing Evil",
+        "Riding",
+        "Craft (armor-making) 3",
+        "Leadership"
+      ],
+      "startingEquipment": {
+        "weapons": ["flail"],
+        "armor": ["plate armor"],
+        "clothing": [
+          "blue craftborn tunic and pants",
+          "embossed belt",
+          "low boots"
+        ],
+        "misc": [
+          "Prayer book with bane-rune and word of command",
+          "steel holy symbol (armorer’s insignia)",
+          "steel shield with craft insignia",
+          "mule",
+          "riding saddle and tack",
+          "leather saddlebag",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "3gp",
+        "encumbrance": "8 st with rations on mule"
+      }
+    }
+  ],
+  "dwarvenVaultguard": [
+    {
+      "roll": "3-4",
+      "template": "Deserter Houseless (ex-Bathsworn)",
+      "proficiencies": ["Running", "Survival"],
+      "startingEquipment": {
+        "weapons": ["Battle axe", "hand axe"],
+        "armor": ["undamaged leather armor"],
+        "clothing": ["threadbare workborn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "backpack",
+          "tinderbox",
+          "6 torches",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "3gp",
+        "encumbrance": "4 5/6 st"
+      }
+    },
+    {
+      "roll": "5-6",
+      "template": "Battlerager Bathsworn",
+      "proficiencies": ["Berserkergang", "Intimidation"],
+      "startingEquipment": {
+        "weapons": ["Rune-carved battle axe", "wooden shield", "dagger"],
+        "armor": ["ring mail armor"],
+        "clothing": ["craftborn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "backpack",
+          "tinderbox",
+          "6 torches",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "3gp",
+        "encumbrance": "6 5/6 st"
+      }
+    },
+    {
+      "roll": "7-8",
+      "template": "Sentinel Bathsworn",
+      "proficiencies": ["Alertness", "Signaling"],
+      "startingEquipment": {
+        "weapons": ["Iron-shod spear", "warhammer", "wooden shield"],
+        "armor": ["banded plate armor"],
+        "clothing": ["craftborn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "backpack",
+          "tinderbox",
+          "6 torches",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "5gp",
+        "encumbrance": "9 4/6 st"
+      }
+    },
+    {
+      "roll": "9-10",
+      "template": "Clansdwarf Bathsworn",
+      "proficiencies": ["Fighting Style Specialization (weapon & shield)", "Manual of Arms 2"],
+      "startingEquipment": {
+        "weapons": ["Iron-shod spear", "warhammer"],
+        "armor": ["banded plate armor"],
+        "clothing": ["oathsworn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "steel shield painted with clan emblem",
+          "backpack",
+          "tinderbox",
+          "6 torches",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "17gp",
+        "encumbrance": "9 4/6 st"
+      }
+    },
+    {
+      "roll": "11-12",
+      "template": "Goblin Slayer Bathsworn",
+      "proficiencies": ["Goblin-Slaying", "Caving"],
+      "startingEquipment": {
+        "weapons": ["Crossbow", "case with 20 bolts", "spear notched with many kills", "hand axe"],
+        "armor": ["chainmail armor"],
+        "clothing": ["military cloak", "oathsworn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "steel shield painted with vault insignia",
+          "backpack",
+          "tinderbox",
+          "6 torches",
+          "3 flasks of military oil",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "9gp",
+        "encumbrance": "9 3/6 st"
+      }
+    },
+    {
+      "roll": "13-14",
+      "template": "Axebearer Bathsworn",
+      "proficiencies": ["Weapon Focus (axes)", "Endurance"],
+      "startingEquipment": {
+        "weapons": ["Crossbow", "case with 20 bolts", "battle axe", "2 hand axes"],
+        "armor": ["banded plate armor"],
+        "clothing": ["oathsworn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "steel shield repainted many times",
+          "backpack",
+          "tinderbox",
+          "6 torches",
+          "2 flasks of military oil",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "14gp",
+        "encumbrance": "9 4/6 st"
+      }
+    },
+    {
+      "roll": "15-16",
+      "template": "Besieger Bathsworn",
+      "proficiencies": ["Dungeonbashing Expertise", "Siege Engineering"],
+      "startingEquipment": {
+        "weapons": ["Crossbow", "case with 20 bolts", "spiked mace"],
+        "armor": ["banded plate armor"],
+        "clothing": ["oathsworn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "heavy steel shield with many dents",
+          "backpack",
+          "crowbar",
+          "small hammer",
+          "12 iron spikes",
+          "tinderbox",
+          "6 torches",
+          "2 flasks of military oil",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "19gp",
+        "encumbrance": "10 st"
+      }
+    },
+    {
+      "roll": "17-18",
+      "template": "Highborn Bathsworn (ex-Highborn) or Highborn",
+      "proficiencies": ["Command", "Riding"],
+      "startingEquipment": {
+        "weapons": ["Crossbow", "case with 20 bolts", "iron-shod spear", "warhammer carved with clan emblem", "hand axe"],
+        "armor": ["dwarf-forged plate armor"],
+        "clothing": ["oathsworn tunic and pants", "leather belt", "high boots"],
+        "misc": [
+          "steel shield painted with clan emblem",
+          "mule",
+          "riding saddle and tack",
+          "saddlebags",
+          "tinderbox",
+          "6 torches",
+          "waterskin",
+          "1 week’s iron rations"
+        ],
+        "money": "4gp",
+        "encumbrance": "10 st with rations on mule"
+      }
+    }
   ]
+
 }
