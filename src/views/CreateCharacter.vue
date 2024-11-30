@@ -3,7 +3,7 @@ import Stepper from 'primevue/stepper'
 import StepItem from 'primevue/stepitem'
 import Step from 'primevue/step'
 import StepPanel from 'primevue/steppanel'
-import Dock from 'primevue/dock'
+import SpeedDial from 'primevue/speeddial'
 import Attributes from '@/components/AttributeSelector.vue'
 import Class from '@/components/ClassSelector.vue'
 import DownloadSection from '@/components/DownloadSection.vue'
@@ -16,7 +16,7 @@ import { PrimeIcons } from '@primevue/core/api'
 const format = key => formatKey(key)
 const characterStore = useCharacterStore()
 const isOpen = ref(false)
-const toggleRollHistory = () => isOpen.value = !isOpen.value;
+const toggleRollHistory = () => (isOpen.value = !isOpen.value)
 const items = ref([
   {
     label: 'Reset',
@@ -31,17 +31,10 @@ const items = ref([
     command: toggleRollHistory,
   },
 ])
-const onDockItemClick = (event, item) => {
-  if (item.command) {
-    item.command()
-  }
-
-  event.preventDefault()
-}
 </script>
 
 <template>
-  <Stepper value="1" linear>
+  <Stepper value="1" linear class="pb-10">
     <StepItem value="1">
       <Step value="1">
         Character Attributes
@@ -107,13 +100,18 @@ const onDockItemClick = (event, item) => {
       </StepPanel>
     </StepItem>
   </Stepper>
-  <Dock breakpoint="10px" :model="items">
-    <template #item="{ item }">
-      <a
+
+  <SpeedDial
+    :model="items"
+    pt:root:class="speed-dial bottom-2 right-2"
+    direction="up" :transitionDelay="80"
+    :tooltipOptions="{ position: 'left' }"
+  >
+    <template #item="{ item, toggleCallback }">
+      <div
         v-tooltip="item.label"
-        href="#"
         class="p-dock-item-link"
-        @click="onDockItemClick($event, item)"
+        @click="toggleCallback"
       >
         <template v-if="typeof item.icon === 'string'">
           <i :class="item.icon" style="font-size: 2rem"></i>
@@ -121,8 +119,14 @@ const onDockItemClick = (event, item) => {
         <template v-else>
           <component :is="item.icon" />
         </template>
-      </a>
+      </div>
     </template>
-  </Dock>
+  </SpeedDial>
+
   <DiceRoll :isOpen="isOpen" @update:isOpen="toggleRollHistory" />
 </template>
+<style>
+.p-speeddial.speed-dial {
+  position: fixed ;
+} 
+</style>
