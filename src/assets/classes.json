@@ -2139,5 +2139,455 @@
         "Weapon Focus"
       ]
     }
+  },
+  "warlock": {
+    "keyAttributes": ["INT", "WIL"],
+    "requirements": "None",
+    "hitDice": "1d4",
+    "maximumLevel": 14,
+    "description": "While mages are sometimes colloquially referred to as warlocks, the true warlock is a far more sinister individual. A warlock is one who seeks alliance with dark beings and pursues forbidden lore, hoping to find a quicker, easier path to power than the methodical practices of magecraft. Many warlocks become adventurers to plumb the secrets of dusty tombs, forgotten crypts, and hidden sanctums. Few do so for heroic motives. These practices leave warlocks reviled and condemned in the Auran Empire. The Tower of Knowledge bars known warlocks from its august halls entirely. Warlocks are treated with respect and more than a little fear in the Sunset Kingdoms of Kemesh, Somirea, and Celdorea, and many assume positions of power in those societies.",
+    "combatCharacteristics": {
+      "combatProficiencies": ["daggers", "darts", "staffs", "whips"],
+      "armorProficiency": "none",
+      "fightingStyleProficiency": "two-handed weapon",
+      "combatProgression": {
+        "attackThrowsAndSavingThrows": "two points every six levels",
+        "cleave": "no",
+        "bonusDamage": "none"
+      }
+    },
+    "startingClassPowers": [
+      {
+        "name": "Arcane Magic",
+        "description": "Warlocks can learn and cast powerful arcane spells. The number and levels of spells the warlock can cast in a single day are listed on the Warlock Spell Progression table. A warlock’s spell selection is limited to the spells in his repertoire. A warlock’s repertoire can include the number of spells up to the number and level of spells listed for his level, increased by his Intellect bonus."
+      },
+      {
+        "name": "Occultism",
+        "description": "Every warlock has studied the forbidden secrets of the occult. On a proficiency throw of 11+, he can name the popular titles and symbols of chthonic powers; identify the type of undead creature encountered; and otherwise recall information of interest to demonology and necromancy. (This class power counts as one rank of Knowledge (Occult) proficiency.)"
+      }
+    ],
+    "levelProgression": [
+      {
+        "level": 1,
+        "title": "Medium",
+        "experience": 0,
+        "hitDice": "1d4",
+        "spellProgression": { "1": 1, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 2,
+        "title": "Occultist",
+        "experience": 2500,
+        "hitDice": "2d4",
+        "spellProgression": { "1": 2, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 3,
+        "title": "Spiritualist",
+        "experience": 5000,
+        "hitDice": "3d4",
+        "spellProgression": { "1": 2, "2": 1, "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 4,
+        "title": "Hexgiver",
+        "experience": 10000,
+        "hitDice": "4d4",
+        "spellProgression": { "1": 2, "2": 2, "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 5,
+        "title": "Cursebringer",
+        "experience": 20000,
+        "hitDice": "5d4",
+        "spellProgression": { "1": 2, "2": 2, "3": 1, "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 6,
+        "title": "Maleficus",
+        "experience": 40000,
+        "hitDice": "6d4",
+        "spellProgression": { "1": 2, "2": 2, "3": 2, "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 7,
+        "title": "Infernalist",
+        "experience": 80000,
+        "hitDice": "7d4",
+        "spellProgression": { "1": 3, "2": 2, "3": 2, "4": 1, "5": "-", "6": "-" }
+      },
+      {
+        "level": 8,
+        "title": "Warlock",
+        "experience": 160000,
+        "hitDice": "8d4",
+        "spellProgression": { "1": 3, "2": 3, "3": 2, "4": 2, "5": "-", "6": "-" }
+      },
+      {
+        "level": 9,
+        "title": "Dread Lord",
+        "experience": 310000,
+        "hitDice": "9d4",
+        "spellProgression": { "1": 3, "2": 3, "3": 3, "4": 2, "5": 1, "6": "-" }
+      },
+      {
+        "level": 10,
+        "title": "Dread Lord, 10th level",
+        "experience": 460000,
+        "hitDice": "9d4 + 1*",
+        "spellProgression": { "1": 3, "2": 3, "3": 3, "4": 3, "5": 2, "6": "-" }
+      },
+      {
+        "level": 11,
+        "title": "Dread Lord, 11th level",
+        "experience": 610000,
+        "hitDice": "9d4 + 2*",
+        "spellProgression": { "1": 4, "2": 3, "3": 3, "4": 3, "5": 2, "6": 1 }
+      },
+      {
+        "level": 12,
+        "title": "Dread Lord, 12th level",
+        "experience": 760000,
+        "hitDice": "9d4 + 3*",
+        "spellProgression": { "1": 4, "2": 4, "3": 3, "4": 3, "5": 3, "6": 2 }
+      },
+      {
+        "level": 13,
+        "title": "Dread Lord, 13th level",
+        "experience": 910000,
+        "hitDice": "9d4 + 4*",
+        "spellProgression": { "1": 4, "2": 4, "3": 4, "4": 3, "5": 3, "6": 2 }
+      },
+      {
+        "level": 14,
+        "title": "Dread King",
+        "experience": 1060000,
+        "hitDice": "9d4 + 5*",
+        "spellProgression": { "1": 4, "2": 4, "3": 4, "4": 4, "5": 3, "6": 3 }
+      }
+    ],
+    "darkPaths": [
+      {
+        "name": "Demonology",
+        "description": "Diabolists who call on the demonic power of the Outer Darkness.",
+        "rewards": [
+          { "level": 1, "reward": "Conjure Dark Powers" },
+          { "level": 3, "reward": "Theology" },
+          { "level": 5, "reward": "Conjure Hellion" },
+          { "level": 7, "reward": "Expanded Repertoire" },
+          { "level": 9, "reward": "Words of Command and Obedience" },
+          { "level": 11, "reward": "Power of Sacrifice" }
+        ]
+      },
+      {
+        "name": "Necromancy",
+        "description": "Morbid practitioners of the forbidden craft of necromancy.",
+        "rewards": [
+          { "level": 1, "reward": "Secrets of the Dark Arts" },
+          { "level": 3, "reward": "Mortuary Science" },
+          { "level": 5, "reward": "Speak with Dead" },
+          { "level": 7, "reward": "Expanded Repertoire" },
+          { "level": 9, "reward": "Lordship Over the Undead" },
+          { "level": 11, "reward": "Secrets of Life and Death" }
+        ]
+      },
+      {
+        "name": "Transmogrification",
+        "description": "Sculptors of flesh who create living horrors.",
+        "rewards": [
+          { "level": 1, "reward": "Grotesque Arts of Transformation" },
+          { "level": 3, "reward": "Alchemy" },
+          { "level": 5, "reward": "Skinchange" },
+          { "level": 7, "reward": "Expanded Repertoire" },
+          { "level": 9, "reward": "Hideous Servant" },
+          { "level": 11, "reward": "Shape Flesh and Bone" }
+        ]
+      }
+    ],
+    "additionalClassPowers": [
+      {
+        "level": 3,
+        "name": "Dark Path II",
+        "description": "The warlock’s dark path grants him his second reward."
+      },
+      {
+        "level": 5,
+        "name": "Dark Path III",
+        "description": "The warlock’s dark path grants him his third reward."
+      },
+      {
+        "level": 5,
+        "name": "Minor Magical Research",
+        "description": "The warlock can research spells, scribe magical scrolls, and brew potions."
+      },
+      {
+        "level": 7,
+        "name": "Dark Path IV",
+        "description": "The warlock’s dark path grants him his fourth reward."
+      },
+      {
+        "level": 9,
+        "name": "Dark Path V",
+        "description": "The warlock’s dark path grants him his fifth reward."
+      },
+      {
+        "level": 9,
+        "name": "Major Magical Research",
+        "description": "The warlock can create more powerful magic items such as weapons, rings, and staffs."
+      },
+      {
+        "level": 9,
+        "name": "Sanctum",
+        "description": "By acquiring a sanctum worth at least 15,000gp, the warlock can attract followers to his service."
+      },
+      {
+        "level": 11,
+        "name": "Dark Path VI",
+        "description": "The warlock’s dark path grants him his sixth reward."
+      },
+      {
+        "level": 11,
+        "name": "Supreme Magical Research",
+        "description": "The warlock can learn and cast ritual arcane spells of great power (7th, 8th, and 9th level), craft magical constructs, and create magical cross-breeds. If chaotic, the warlock can create necromantic servants and become undead."
+      }
+    ],
+    "corruptingWeaknesses": [
+      { "label": "Disfigured", "description": "Each disfigurement imposes a -2 penalty to reaction rolls with sapient creatures of Lawful or Neutral alignment." },
+      { "label": "Distrusted", "description": "A reaction roll with sapient creatures of Lawful or Neutral alignment can never achieve a friendly (12+) result." },
+      { "label": "Enervated", "description": "The warlock’s Constitution is reduced by 2 points each time this weakness occurs." },
+      { "label": "Frightening to Beasts", "description": "The warlock suffers a -4 reaction roll when encountering animals or giant animals. He cannot ride normal mounts." },
+      { "label": "Haunted", "description": "Whispers from the beyond plague the warlock, imposing a -2 penalty to listening throws and -1 penalty to initiative and surprise rolls." },
+      { "label": "Mad", "description": "Each day the warlock must make a Spells saving throw or go mad for 1-10 hours." },
+      { "label": "Mutated", "description": "Roll 1d10 on the Magical Mutations subtable. Each subsequent occurrence increases the roll by 1." },
+      { "label": "Nocturnal", "description": "The warlock cannot regain spells unless he sleeps during the day. He suffers a penalty of -2 to all throws when in sunlight." },
+      { "label": "Obsessed", "description": "The warlock’s Will is reduced by 2 points each time this weakness occurs." },
+      { "label": "Sleepless", "description": "Each time the warlock attempts to rest, he must roll 1d6. On a 1, he regains no hit points and recovers no spells." }
+    ],
+    "classProficiencies": {
+      "progression": {
+        "classProficiency": { "1st": 1, "6th": 1, "12th": 1 },
+        "generalProficiency": { "1st": 1, "5th": 1, "9th": 1, "13th": 1 }
+      },
+      "warlockProficiencyList": [
+        "Alchemy", "Battle Magic", "Beast Friendship", "Black Lore of Zahar", "Counterspelling", "Divine Blessing", "Elementalism", "Elven Bloodline", "Expanded Repertoire", "Experimenting", "Familiar", "Illusion Resistance", "Knowledge", "Language", "Loremastery", "Magical Engineering", "Mastery of Enchantments & Illusions", "Mastery of Conjuration & Summoning", "Mystic Aura", "Naturalism", "Poisoning", "Prestidigitation", "Quiet Magic", "Sensing Good", "Sensing Power", "Soothsaying", "Transmogrification", "Unflappable Casting"
+      ]
+    }
+  },
+  "witch": {
+    "keyAttribute": ["INT", "WIL"],
+    "requirements": "None",
+    "hitDice": "1d4",
+    "maximumLevel": 14,
+    "description": "The ignorant will often refer to any female spellcaster as a witch. Actual witches, however, are women who practice a distinct craft of magic. Like priestesses and shamans, witches invoke divine magic, but they do not organize into communities of faith nor do they dedicate themselves to the service of their gods or goddesses. Rather, they seek to gain personal knowledge and strength by bartering with the old powers of the world. Through ancient pacts, forgotten prayers, secret names of power, and other means, they appease, bargain, coerce, convince, and harness divine power to their own ends. Their quest for knowledge and power often drives witches to become adventurers.",
+    "combatCharacteristics": {
+      "combatProficiencies": ["clubs", "daggers", "darts", "staffs"],
+      "armorProficiency": "none",
+      "fightingStyleProficiency": "two-handed weapon",
+      "combatProgression": {
+        "attackThrows": "two points every six levels",
+        "savingThrows": "two points every four levels",
+        "cleave": "no",
+        "bonusDamage": "none"
+      }
+    },
+    "startingClassPowers": [
+      {
+        "name": "Studious Divine Magic",
+        "description": "By reminding the gods of ancient pacts and coercing them with forgotten prayers and binding hymns, witches can cast divine spells. Unlike most other divine casters, who receive their spells from prayer, witches receive their spells from study. Witches follow the same spell progression and use the same rules for learning and casting spells as mages. They record their repertoires of spells in spell books and can learn new spells from scribing scrolls or studying other divine spell books. They select their spells from the divine spell list, rather than the arcane spell list, however, and cannot learn or cast spells found in arcane spell books."
+      },
+      {
+        "name": "Tradition",
+        "description": "Every witch belongs to a tradition, which defines her approach to the magic and her relationship with the gods and spirits that are her source of power. The regions within the Auran Empire campaign setting associated with each tradition are noted below. Judges can create other traditions for their own campaign settings where necessary."
+      },
+      {
+        "name": "Village Wisdom",
+        "description": "All witches can perform minor acts of 'hedge magic' useful in village life, such as alleviating cold symptoms, easing the pains of childbirth, driving away bedbugs from a mattress, removing mites and ticks from a creature, and so on. Each use takes 1 turn (10 minutes)."
+      }
+    ],
+    "levelProgression": [
+      {
+        "level": 1,
+        "title": "Initiate",
+        "experience": 0,
+        "hitDice": "1d4",
+        "spellProgression": { "1": 2, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 2,
+        "title": "Seeress",
+        "experience": 2000,
+        "hitDice": "2d4",
+        "spellProgression": { "1": 3, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 3,
+        "title": "Siren",
+        "experience": 4000,
+        "hitDice": "3d4",
+        "spellProgression": { "1": 3, "2": 2, "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 4,
+        "title": "Pythoness",
+        "experience": 8000,
+        "hitDice": "4d4",
+        "spellProgression": { "1": 3, "2": 3, "3": "-", "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 5,
+        "title": "Sibyl",
+        "experience": 16000,
+        "hitDice": "5d4",
+        "spellProgression": { "1": 3, "2": 3, "3": 2, "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 6,
+        "title": "Enchantress",
+        "experience": 32000,
+        "hitDice": "6d4",
+        "spellProgression": { "1": 3, "2": 3, "3": 3, "4": "-", "5": "-", "6": "-" }
+      },
+      {
+        "level": 7,
+        "title": "Sorceress",
+        "experience": 65000,
+        "hitDice": "7d4",
+        "spellProgression": { "1": 5, "2": 3, "3": 3, "4": 2, "5": "-", "6": "-" }
+      },
+      {
+        "level": 8,
+        "title": "Incantrix",
+        "experience": 130000,
+        "hitDice": "8d4",
+        "spellProgression": { "1": 5, "2": 5, "3": 3, "4": 3, "5": "-", "6": "-" }
+      },
+      {
+        "level": 9,
+        "title": "Witch",
+        "experience": 230000,
+        "hitDice": "9d4",
+        "spellProgression": { "1": 5, "2": 5, "3": 5, "4": 3, "5": 2, "6": "-" }
+      },
+      {
+        "level": 10,
+        "title": "Witch, 10th level",
+        "experience": 330000,
+        "hitDice": "9d4 + 1*",
+        "spellProgression": { "1": 5, "2": 5, "3": 5, "4": 5, "5": 3, "6": "-" }
+      },
+      {
+        "level": 11,
+        "title": "Witch, 11th level",
+        "experience": 430000,
+        "hitDice": "9d4 + 2*",
+        "spellProgression": { "1": 6, "2": 5, "3": 5, "4": 5, "5": 3, "6": 2 }
+      },
+      {
+        "level": 12,
+        "title": "Witch, 12th level",
+        "experience": 530000,
+        "hitDice": "9d4 + 3*",
+        "spellProgression": { "1": 6, "2": 6, "3": 5, "4": 5, "5": 5, "6": 3 }
+      },
+      {
+        "level": 13,
+        "title": "Witch, 13th level",
+        "experience": 630000,
+        "hitDice": "9d4 + 4*",
+        "spellProgression": { "1": 6, "2": 6, "3": 6, "4": 5, "5": 5, "6": 3 }
+      },
+      {
+        "level": 14,
+        "title": "Witch Queen",
+        "experience": 730000,
+        "hitDice": "9d4 + 5*",
+        "spellProgression": { "1": 6, "2": 6, "3": 6, "4": 6, "5": 5, "6": 5 }
+      }
+    ],
+    "traditions": [
+      {
+        "name": "Antiquarian Witch",
+        "description": "Wise women who focus on healing and beneficial potions, they practice their traditional craft wherever rural human settlements may be found.",
+        "regions": ["Auran Empire", "Jutland", "Ivory Kingdoms"],
+        "rewards": [
+          { "level": 1, "reward": "Traditional Medicine" },
+          { "level": 3, "reward": "Healing Arts" },
+          { "level": 5, "reward": "Second Sight" },
+          { "level": 7, "reward": "Magic Mirror" }
+        ]
+      },
+      {
+        "name": "Chthonic Witch",
+        "description": "Malefic practitioners who consort with the darkest of powers, reveling in the seduction and corruption of the innocent.",
+        "regions": ["Kemesh", "Ivory Kingdoms"],
+        "rewards": [
+          { "level": 1, "reward": "Bedazzling Glamour" },
+          { "level": 3, "reward": "Decadent Arts" },
+          { "level": 5, "reward": "Subtle Beguilement" },
+          { "level": 7, "reward": "Evil Eye" }
+        ]
+      },
+      {
+        "name": "Sylvan Witch",
+        "description": "Reclusive witches who travel the borderlands between human settlements and fey forests.",
+        "regions": ["Rorn", "Southern Argollë"],
+        "rewards": [
+          { "level": 1, "reward": "Friend of Birds and Beasts" },
+          { "level": 3, "reward": "Natural Arts" },
+          { "level": 5, "reward": "Close Friend of Birds and Beasts" },
+          { "level": 7, "reward": "Enchanted Forest" }
+        ]
+      }
+    ],
+    "additionalClassPowers": [
+      {
+        "level": 3,
+        "name": "Brew Potions",
+        "description": "The witch can brew potions. However, she cannot yet research new spells or scribe scrolls."
+      },
+      {
+        "level": 5,
+        "name": "Minor Magical Research",
+        "description": "The witch can research new spells. However, she cannot yet scribe scrolls."
+      },
+      {
+        "level": 7,
+        "name": "Scribe Scrolls",
+        "description": "The witch can create magic scrolls."
+      },
+      {
+        "level": 9,
+        "name": "Witch’s Cottage",
+        "description": "By acquiring a cottage worth at least 15,000gp, the witch can attract followers to her service."
+      },
+      {
+        "level": 9,
+        "name": "Major Magical Research",
+        "description": "The witch can create more powerful magic items such as weapons, rings, and staffs."
+      },
+      {
+        "level": 11,
+        "name": "Supreme Magical Research",
+        "description": "The witch can learn and cast ritual divine spells of great power (7th, 8th, and 9th level) and craft magical constructs. If chaotic, the witch can create necromantic servants and become undead."
+      }
+    ],
+    "codeOfBehavior": [
+      { "level": 1, "obligation": "The witch must light a candle and pray over it for one turn (10 minutes) at noon and midnight." },
+      { "level": 3, "obligation": "The witch cannot lie. She can equivocate, prevaricate, speak in riddles, or stay silent, however." },
+      { "level": 5, "obligation": "If the witch unjustly wrongs another human or demi-human, she must redress the wrong at threefold its value." },
+      { "level": 7, "obligation": "If the witch accepts a gift, she must offer a gift of threefold value to the gift giver." },
+      { "level": 9, "obligation": "If the witch suffers a personal wrong, she must exact retribution of threefold value from the one who wronged her." },
+      { "level": 11, "obligation": "The witch’s soul is sworn to service after death. She cannot be restored to life by any means short of a wish or miracle." }
+    ],
+    "classProficiencies": {
+      "progression": {
+        "classProficiency": { "1st": 1, "4th": 1, "8th": 1, "12th": 1 },
+        "generalProficiency": { "1st": 1, "5th": 1, "9th": 1, "13th": 1 }
+      },
+      "witchProficiencyList": [
+        "Alchemy", "Arcane Dabbling", "Beast Friendship", "Black Lore of Zahar", "Contemplation", "Divine Blessing", "Divine Health", "Elementalism", "Elven Bloodline", "Expanded Repertoire", "Familiar", "Illusion Resistance", "Laying on Hands", "Loremastery", "Magical Engineering", "Magical Music", "Mastery of Enchantments & Illusions", "Mystic Aura", "Naturalism", "Passing without Trace", "Poisoning", "Prestidigitation", "Prophecy", "Quiet Magic", "Sensing Power", "Soothsaying", "Transmogrification", "Unflappable Casting"
+      ]
+    }
   }
+
 }
