@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import { formatKey } from '@/utils/formatKey';
+import { formatKey } from '@/utils/formatKey'
 export default {
   name: 'DinamicComponent',
   props: {
@@ -87,7 +87,7 @@ export default {
 
       return true // All checks passed; all elements are objects and have the same keys
     },
-    formatKey
+    formatKey,
   },
 }
 </script>

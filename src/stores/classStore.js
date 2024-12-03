@@ -11,6 +11,6 @@ export const useClassStore = defineStore('class', {
   getters: {
     allClasses(state) {
       return Object.keys(state.classes) // Returns an array of class names
-    }
+    },
   },
 })

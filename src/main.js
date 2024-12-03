@@ -5,12 +5,12 @@ import './style.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import PrimeVue from 'primevue/config'
-import Aura from '@primevue/themes/aura';
+import Aura from '@primevue/themes/aura'
 import Button from 'primevue/button'
 import MultiSelect from 'primevue/multiselect'
 import Select from 'primevue/select'
 import FloatLabel from 'primevue/floatlabel'
-import { InputNumber, InputText} from 'primevue'
+import { InputNumber, InputText } from 'primevue'
 
 import App from './App.vue'
 import router from './router'
@@ -19,15 +19,15 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(PrimeVue, {
-    theme: {
-        preset: Aura,
-        options: {
-            prefix: 'p',
-            darkModeSelector: 'system',
-            cssLayer: false
-        }
-    }
- })
+  theme: {
+    preset: Aura,
+    options: {
+      prefix: 'p',
+      darkModeSelector: 'system',
+      cssLayer: false,
+    },
+  },
+})
 app.component('Button', Button)
 app.component('MultiSelect', MultiSelect)
 app.component('Select', Select)

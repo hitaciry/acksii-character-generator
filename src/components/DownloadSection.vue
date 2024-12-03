@@ -19,11 +19,15 @@ const save = () => {
 
 <template>
   <div class="flex items-baseline m-5 gap-5">
-    <FloatLabel >
+    <FloatLabel>
       <InputText id="characterName" v-model="characterStore.name" />
       <label for="characterName">Character name</label>
     </FloatLabel>
-    <Button label="Submit" :disabled="characterStore.name === null" @click="save()">
+    <Button
+      label="Submit"
+      :disabled="characterStore.name === null"
+      @click="save()"
+    >
       Download
     </Button>
   </div>

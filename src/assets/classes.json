@@ -2172,56 +2172,112 @@
         "title": "Medium",
         "experience": 0,
         "hitDice": "1d4",
-        "spellProgression": { "1": 1, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 1,
+          "2": "-",
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 2,
         "title": "Occultist",
         "experience": 2500,
         "hitDice": "2d4",
-        "spellProgression": { "1": 2, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 2,
+          "2": "-",
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 3,
         "title": "Spiritualist",
         "experience": 5000,
         "hitDice": "3d4",
-        "spellProgression": { "1": 2, "2": 1, "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 2,
+          "2": 1,
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 4,
         "title": "Hexgiver",
         "experience": 10000,
         "hitDice": "4d4",
-        "spellProgression": { "1": 2, "2": 2, "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 2,
+          "2": 2,
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 5,
         "title": "Cursebringer",
         "experience": 20000,
         "hitDice": "5d4",
-        "spellProgression": { "1": 2, "2": 2, "3": 1, "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 2,
+          "2": 2,
+          "3": 1,
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 6,
         "title": "Maleficus",
         "experience": 40000,
         "hitDice": "6d4",
-        "spellProgression": { "1": 2, "2": 2, "3": 2, "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 2,
+          "2": 2,
+          "3": 2,
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 7,
         "title": "Infernalist",
         "experience": 80000,
         "hitDice": "7d4",
-        "spellProgression": { "1": 3, "2": 2, "3": 2, "4": 1, "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": 2,
+          "3": 2,
+          "4": 1,
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 8,
         "title": "Warlock",
         "experience": 160000,
         "hitDice": "8d4",
-        "spellProgression": { "1": 3, "2": 3, "3": 2, "4": 2, "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": 3,
+          "3": 2,
+          "4": 2,
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 9,
@@ -2352,16 +2408,46 @@
       }
     ],
     "corruptingWeaknesses": [
-      { "label": "Disfigured", "description": "Each disfigurement imposes a -2 penalty to reaction rolls with sapient creatures of Lawful or Neutral alignment." },
-      { "label": "Distrusted", "description": "A reaction roll with sapient creatures of Lawful or Neutral alignment can never achieve a friendly (12+) result." },
-      { "label": "Enervated", "description": "The warlock’s Constitution is reduced by 2 points each time this weakness occurs." },
-      { "label": "Frightening to Beasts", "description": "The warlock suffers a -4 reaction roll when encountering animals or giant animals. He cannot ride normal mounts." },
-      { "label": "Haunted", "description": "Whispers from the beyond plague the warlock, imposing a -2 penalty to listening throws and -1 penalty to initiative and surprise rolls." },
-      { "label": "Mad", "description": "Each day the warlock must make a Spells saving throw or go mad for 1-10 hours." },
-      { "label": "Mutated", "description": "Roll 1d10 on the Magical Mutations subtable. Each subsequent occurrence increases the roll by 1." },
-      { "label": "Nocturnal", "description": "The warlock cannot regain spells unless he sleeps during the day. He suffers a penalty of -2 to all throws when in sunlight." },
-      { "label": "Obsessed", "description": "The warlock’s Will is reduced by 2 points each time this weakness occurs." },
-      { "label": "Sleepless", "description": "Each time the warlock attempts to rest, he must roll 1d6. On a 1, he regains no hit points and recovers no spells." }
+      {
+        "label": "Disfigured",
+        "description": "Each disfigurement imposes a -2 penalty to reaction rolls with sapient creatures of Lawful or Neutral alignment."
+      },
+      {
+        "label": "Distrusted",
+        "description": "A reaction roll with sapient creatures of Lawful or Neutral alignment can never achieve a friendly (12+) result."
+      },
+      {
+        "label": "Enervated",
+        "description": "The warlock’s Constitution is reduced by 2 points each time this weakness occurs."
+      },
+      {
+        "label": "Frightening to Beasts",
+        "description": "The warlock suffers a -4 reaction roll when encountering animals or giant animals. He cannot ride normal mounts."
+      },
+      {
+        "label": "Haunted",
+        "description": "Whispers from the beyond plague the warlock, imposing a -2 penalty to listening throws and -1 penalty to initiative and surprise rolls."
+      },
+      {
+        "label": "Mad",
+        "description": "Each day the warlock must make a Spells saving throw or go mad for 1-10 hours."
+      },
+      {
+        "label": "Mutated",
+        "description": "Roll 1d10 on the Magical Mutations subtable. Each subsequent occurrence increases the roll by 1."
+      },
+      {
+        "label": "Nocturnal",
+        "description": "The warlock cannot regain spells unless he sleeps during the day. He suffers a penalty of -2 to all throws when in sunlight."
+      },
+      {
+        "label": "Obsessed",
+        "description": "The warlock’s Will is reduced by 2 points each time this weakness occurs."
+      },
+      {
+        "label": "Sleepless",
+        "description": "Each time the warlock attempts to rest, he must roll 1d6. On a 1, he regains no hit points and recovers no spells."
+      }
     ],
     "classProficiencies": {
       "progression": {
@@ -2369,7 +2455,34 @@
         "generalProficiency": { "1st": 1, "5th": 1, "9th": 1, "13th": 1 }
       },
       "warlockProficiencyList": [
-        "Alchemy", "Battle Magic", "Beast Friendship", "Black Lore of Zahar", "Counterspelling", "Divine Blessing", "Elementalism", "Elven Bloodline", "Expanded Repertoire", "Experimenting", "Familiar", "Illusion Resistance", "Knowledge", "Language", "Loremastery", "Magical Engineering", "Mastery of Enchantments & Illusions", "Mastery of Conjuration & Summoning", "Mystic Aura", "Naturalism", "Poisoning", "Prestidigitation", "Quiet Magic", "Sensing Good", "Sensing Power", "Soothsaying", "Transmogrification", "Unflappable Casting"
+        "Alchemy",
+        "Battle Magic",
+        "Beast Friendship",
+        "Black Lore of Zahar",
+        "Counterspelling",
+        "Divine Blessing",
+        "Elementalism",
+        "Elven Bloodline",
+        "Expanded Repertoire",
+        "Experimenting",
+        "Familiar",
+        "Illusion Resistance",
+        "Knowledge",
+        "Language",
+        "Loremastery",
+        "Magical Engineering",
+        "Mastery of Enchantments & Illusions",
+        "Mastery of Conjuration & Summoning",
+        "Mystic Aura",
+        "Naturalism",
+        "Poisoning",
+        "Prestidigitation",
+        "Quiet Magic",
+        "Sensing Good",
+        "Sensing Power",
+        "Soothsaying",
+        "Transmogrification",
+        "Unflappable Casting"
       ]
     }
   },
@@ -2410,56 +2523,112 @@
         "title": "Initiate",
         "experience": 0,
         "hitDice": "1d4",
-        "spellProgression": { "1": 2, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 2,
+          "2": "-",
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 2,
         "title": "Seeress",
         "experience": 2000,
         "hitDice": "2d4",
-        "spellProgression": { "1": 3, "2": "-", "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": "-",
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 3,
         "title": "Siren",
         "experience": 4000,
         "hitDice": "3d4",
-        "spellProgression": { "1": 3, "2": 2, "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": 2,
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 4,
         "title": "Pythoness",
         "experience": 8000,
         "hitDice": "4d4",
-        "spellProgression": { "1": 3, "2": 3, "3": "-", "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": 3,
+          "3": "-",
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 5,
         "title": "Sibyl",
         "experience": 16000,
         "hitDice": "5d4",
-        "spellProgression": { "1": 3, "2": 3, "3": 2, "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": 3,
+          "3": 2,
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 6,
         "title": "Enchantress",
         "experience": 32000,
         "hitDice": "6d4",
-        "spellProgression": { "1": 3, "2": 3, "3": 3, "4": "-", "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 3,
+          "2": 3,
+          "3": 3,
+          "4": "-",
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 7,
         "title": "Sorceress",
         "experience": 65000,
         "hitDice": "7d4",
-        "spellProgression": { "1": 5, "2": 3, "3": 3, "4": 2, "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 5,
+          "2": 3,
+          "3": 3,
+          "4": 2,
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 8,
         "title": "Incantrix",
         "experience": 130000,
         "hitDice": "8d4",
-        "spellProgression": { "1": 5, "2": 5, "3": 3, "4": 3, "5": "-", "6": "-" }
+        "spellProgression": {
+          "1": 5,
+          "2": 5,
+          "3": 3,
+          "4": 3,
+          "5": "-",
+          "6": "-"
+        }
       },
       {
         "level": 9,
@@ -2572,12 +2741,30 @@
       }
     ],
     "codeOfBehavior": [
-      { "level": 1, "obligation": "The witch must light a candle and pray over it for one turn (10 minutes) at noon and midnight." },
-      { "level": 3, "obligation": "The witch cannot lie. She can equivocate, prevaricate, speak in riddles, or stay silent, however." },
-      { "level": 5, "obligation": "If the witch unjustly wrongs another human or demi-human, she must redress the wrong at threefold its value." },
-      { "level": 7, "obligation": "If the witch accepts a gift, she must offer a gift of threefold value to the gift giver." },
-      { "level": 9, "obligation": "If the witch suffers a personal wrong, she must exact retribution of threefold value from the one who wronged her." },
-      { "level": 11, "obligation": "The witch’s soul is sworn to service after death. She cannot be restored to life by any means short of a wish or miracle." }
+      {
+        "level": 1,
+        "obligation": "The witch must light a candle and pray over it for one turn (10 minutes) at noon and midnight."
+      },
+      {
+        "level": 3,
+        "obligation": "The witch cannot lie. She can equivocate, prevaricate, speak in riddles, or stay silent, however."
+      },
+      {
+        "level": 5,
+        "obligation": "If the witch unjustly wrongs another human or demi-human, she must redress the wrong at threefold its value."
+      },
+      {
+        "level": 7,
+        "obligation": "If the witch accepts a gift, she must offer a gift of threefold value to the gift giver."
+      },
+      {
+        "level": 9,
+        "obligation": "If the witch suffers a personal wrong, she must exact retribution of threefold value from the one who wronged her."
+      },
+      {
+        "level": 11,
+        "obligation": "The witch’s soul is sworn to service after death. She cannot be restored to life by any means short of a wish or miracle."
+      }
     ],
     "classProficiencies": {
       "progression": {
@@ -2585,7 +2772,34 @@
         "generalProficiency": { "1st": 1, "5th": 1, "9th": 1, "13th": 1 }
       },
       "witchProficiencyList": [
-        "Alchemy", "Arcane Dabbling", "Beast Friendship", "Black Lore of Zahar", "Contemplation", "Divine Blessing", "Divine Health", "Elementalism", "Elven Bloodline", "Expanded Repertoire", "Familiar", "Illusion Resistance", "Laying on Hands", "Loremastery", "Magical Engineering", "Magical Music", "Mastery of Enchantments & Illusions", "Mystic Aura", "Naturalism", "Passing without Trace", "Poisoning", "Prestidigitation", "Prophecy", "Quiet Magic", "Sensing Power", "Soothsaying", "Transmogrification", "Unflappable Casting"
+        "Alchemy",
+        "Arcane Dabbling",
+        "Beast Friendship",
+        "Black Lore of Zahar",
+        "Contemplation",
+        "Divine Blessing",
+        "Divine Health",
+        "Elementalism",
+        "Elven Bloodline",
+        "Expanded Repertoire",
+        "Familiar",
+        "Illusion Resistance",
+        "Laying on Hands",
+        "Loremastery",
+        "Magical Engineering",
+        "Magical Music",
+        "Mastery of Enchantments & Illusions",
+        "Mystic Aura",
+        "Naturalism",
+        "Passing without Trace",
+        "Poisoning",
+        "Prestidigitation",
+        "Prophecy",
+        "Quiet Magic",
+        "Sensing Power",
+        "Soothsaying",
+        "Transmogrification",
+        "Unflappable Casting"
       ]
     }
   },
@@ -2596,7 +2810,16 @@
     "maximumLevel": 10,
     "description": "Nothing is so revered among the dwarven people as craftsmanship. A dwarf's work is his life, and the spirits of great dwarven artisans are believed to live on forever in their masterpieces. The veneration of these relics falls to the care of a caste of dwarves known as craftpriests. While most craftpriests attend to the shrines and monuments of their clan, young craftpriests are sometimes sent forth to recover monuments to the glorious past from the ancient ruins and wastelands of the world.",
     "combatCharacteristics": {
-      "combatProficiencies": ["battle axes", "great axes", "hand axes", "clubs", "flails", "maces", "morning stars", "warhammers"],
+      "combatProficiencies": [
+        "battle axes",
+        "great axes",
+        "hand axes",
+        "clubs",
+        "flails",
+        "maces",
+        "morning stars",
+        "warhammers"
+      ],
       "armorProficiency": "all armor",
       "fightingStyleProficiency": ["weapon and shield", "two-handed weapon"],
       "combatProgression": {
@@ -2786,9 +3009,15 @@
     "maximumLevel": 13,
     "description": "Dwarves trained to defend their race’s underground vault from the endless hordes that threaten it are called vaultguards. Though most vaultguards are born, live and die in the vault, from time to time a young vaultguard will be dispatched to foreign realms on a warrior’s pilgrimage. The few vaultguards who return from such pilgrimages bring gold and glory to their clans, often leading them to found new vaults and become great lords.",
     "combatCharacteristics": {
-      "combatProficiencies": ["all weapons except long bows or two-handed swords"],
+      "combatProficiencies": [
+        "all weapons except long bows or two-handed swords"
+      ],
       "armorProficiency": "all armor",
-      "fightingStyleProficiency": ["weapon and shield", "two-handed weapon", "dual weapon"],
+      "fightingStyleProficiency": [
+        "weapon and shield",
+        "two-handed weapon",
+        "dual weapon"
+      ],
       "combatProgression": {
         "attackThrowsAndSavingThrows": "two points every three levels",
         "bonusDamage": "+1 at 1st level, +1 at 3rd, 6th, 9th, and 12th level",
@@ -2922,7 +3151,13 @@
     ],
     "classProficiencies": {
       "progression": {
-        "classProficiency": { "1st": 1, "3rd": 1, "6th": 1, "9th": 1, "12th": 1 },
+        "classProficiency": {
+          "1st": 1,
+          "3rd": 1,
+          "6th": 1,
+          "9th": 1,
+          "12th": 1
+        },
         "generalProficiency": { "1st": 1, "5th": 1, "9th": 1, "13th": 1 }
       },
       "dwarvenVaultguardProficiencyList": [
@@ -2953,5 +3188,4 @@
       ]
     }
   }
-
 }

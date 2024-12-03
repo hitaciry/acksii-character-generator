@@ -1,30 +1,28 @@
 <template>
-    <DataTable :value="characterStore.attributes" size="small">
-      <Column field="name" header="Name"></Column>
-      <Column field="value" header="Value"></Column>
-      <Column field="mod" header="Modifier"></Column>
-      <Column header="Roll">
-        <template #body="attribute">
-          <Button
-            @click="generateAttribute(attribute.index)"
-            :disabled="attribute.data.value !== null"
-          >
-            Roll
-          </Button>
-        </template>
-      </Column>
-      <template #footer>
-        Total attributes modifiers sum: {{ characterStore.modSum }}.
-        <span
-          v-if="
-            characterStore.allAttributesSelected && characterStore.modSum < 0
-          "
-          class="text-red-400"
+  <DataTable :value="characterStore.attributes" size="small">
+    <Column field="name" header="Name"></Column>
+    <Column field="value" header="Value"></Column>
+    <Column field="mod" header="Modifier"></Column>
+    <Column header="Roll">
+      <template #body="attribute">
+        <Button
+          @click="generateAttribute(attribute.index)"
+          :disabled="attribute.data.value !== null"
         >
-          The rules suggest to reroll attributes
-        </span>
+          Roll
+        </Button>
       </template>
-    </DataTable>
+    </Column>
+    <template #footer>
+      Total attributes modifiers sum: {{ characterStore.modSum }}.
+      <span
+        v-if="characterStore.allAttributesSelected && characterStore.modSum < 0"
+        class="text-red-400"
+      >
+        The rules suggest to reroll attributes
+      </span>
+    </template>
+  </DataTable>
 </template>
 
 <script setup>

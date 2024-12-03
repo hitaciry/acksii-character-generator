@@ -3249,7 +3249,11 @@
       "startingEquipment": {
         "weapons": ["Battle axe", "hand axe"],
         "armor": ["undamaged leather armor"],
-        "clothing": ["threadbare workborn tunic and pants", "leather belt", "high boots"],
+        "clothing": [
+          "threadbare workborn tunic and pants",
+          "leather belt",
+          "high boots"
+        ],
         "misc": [
           "backpack",
           "tinderbox",
@@ -3302,7 +3306,10 @@
     {
       "roll": "9-10",
       "template": "Clansdwarf Bathsworn",
-      "proficiencies": ["Fighting Style Specialization (weapon & shield)", "Manual of Arms 2"],
+      "proficiencies": [
+        "Fighting Style Specialization (weapon & shield)",
+        "Manual of Arms 2"
+      ],
       "startingEquipment": {
         "weapons": ["Iron-shod spear", "warhammer"],
         "armor": ["banded plate armor"],
@@ -3324,9 +3331,19 @@
       "template": "Goblin Slayer Bathsworn",
       "proficiencies": ["Goblin-Slaying", "Caving"],
       "startingEquipment": {
-        "weapons": ["Crossbow", "case with 20 bolts", "spear notched with many kills", "hand axe"],
+        "weapons": [
+          "Crossbow",
+          "case with 20 bolts",
+          "spear notched with many kills",
+          "hand axe"
+        ],
         "armor": ["chainmail armor"],
-        "clothing": ["military cloak", "oathsworn tunic and pants", "leather belt", "high boots"],
+        "clothing": [
+          "military cloak",
+          "oathsworn tunic and pants",
+          "leather belt",
+          "high boots"
+        ],
         "misc": [
           "steel shield painted with vault insignia",
           "backpack",
@@ -3345,7 +3362,12 @@
       "template": "Axebearer Bathsworn",
       "proficiencies": ["Weapon Focus (axes)", "Endurance"],
       "startingEquipment": {
-        "weapons": ["Crossbow", "case with 20 bolts", "battle axe", "2 hand axes"],
+        "weapons": [
+          "Crossbow",
+          "case with 20 bolts",
+          "battle axe",
+          "2 hand axes"
+        ],
         "armor": ["banded plate armor"],
         "clothing": ["oathsworn tunic and pants", "leather belt", "high boots"],
         "misc": [
@@ -3390,7 +3412,13 @@
       "template": "Highborn Bathsworn (ex-Highborn) or Highborn",
       "proficiencies": ["Command", "Riding"],
       "startingEquipment": {
-        "weapons": ["Crossbow", "case with 20 bolts", "iron-shod spear", "warhammer carved with clan emblem", "hand axe"],
+        "weapons": [
+          "Crossbow",
+          "case with 20 bolts",
+          "iron-shod spear",
+          "warhammer carved with clan emblem",
+          "hand axe"
+        ],
         "armor": ["dwarf-forged plate armor"],
         "clothing": ["oathsworn tunic and pants", "leather belt", "high boots"],
         "misc": [
@@ -3408,5 +3436,4 @@
       }
     }
   ]
-
 }

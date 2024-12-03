@@ -33,7 +33,7 @@ export const useSpellStore = defineStore('spell', {
     },
   },
   getters: {
-    spellTypes(state){
+    spellTypes(state) {
       /*spellTypes: [
       'blast',
       'Death',
@@ -50,6 +50,6 @@ export const useSpellStore = defineStore('spell', {
       'Esoteric',
     ],*/
       return Object.keys(state.source)
-    }
+    },
   },
 })

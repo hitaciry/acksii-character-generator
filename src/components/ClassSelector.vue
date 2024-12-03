@@ -12,7 +12,7 @@
       <template #legend>
         <div class="flex items-center gap-2">
           <label :for="className" class="flex gap-2">
-            <strong>{{ formatKey(className) }}</strong>
+            <strong class="flex-1">{{ formatKey(className) }}</strong>
             <span>{{ classDetails.keyAttribute }}</span>
             <span>Hit Dice: {{ classDetails.hitDice }}</span>
           </label>

@@ -42,9 +42,9 @@ export const useCharacterStore = defineStore('character', {
     allAttributesSelected(state) {
       return state.attributes.every(attribute => attribute.value !== null)
     },
-    modSum(state){
+    modSum(state) {
       return state.attributes.reduce((a, n) => a + n.mod, 0)
-    }
+    },
   },
 })
 

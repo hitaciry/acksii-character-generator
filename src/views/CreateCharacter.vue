@@ -37,14 +37,15 @@ const items = ref([
   <Stepper value="1" linear class="pb-10">
     <StepItem value="1">
       <Step value="1">
-        Character Attributes
-        <span class="green" v-if="characterStore.allAttributesSelected">
-          <template
+        <h2 class="text-left">Character Attributes</h2>
+        <template v-if="characterStore.allAttributesSelected">
+          <span
+            class="green pe-1"
             v-for="(attribute, index) in characterStore.attributes"
             :key="index"
-            >{{ attribute.key }}:{{ attribute.value }} &nbsp;
-          </template>
-        </span>
+            >{{ attribute.key }}:{{ attribute.value }}
+          </span>
+        </template>
       </Step>
       <StepPanel v-slot="{ activateCallback }">
         <Attributes />
@@ -58,17 +59,20 @@ const items = ref([
       </StepPanel>
     </StepItem>
     <StepItem value="2">
-      <Step value="2"
-        >Select class
-        <span class="green" v-if="characterStore.className">
-          Class: {{ format(characterStore.className) }} &nbsp; Subclass:{{
-            format(characterStore.subclassTemplate)
-          }}
-          &nbsp; Hit dice:{{ format(characterStore.hitDice) }} &nbsp; HP:{{
-            format(characterStore.HP)
-          }}
-          &nbsp;
-        </span>
+      <Step value="2">
+        <h2 class="text-left">Select class</h2>
+        <template v-if="characterStore.className">
+          <span class="green pe-1">
+            Class:{{ format(characterStore.className) }}
+          </span>
+          <span class="green pe-1">
+            Subclass:{{ format(characterStore.subclassTemplate) }}
+          </span>
+          <span class="green pe-1">
+            Hit dice:{{ format(characterStore.hitDice) }}
+          </span>
+          <span class="green pe-1"> HP:{{ format(characterStore.HP) }} </span>
+        </template>
       </Step>
       <StepPanel v-slot="{ activateCallback }">
         <Class />
@@ -104,7 +108,8 @@ const items = ref([
   <SpeedDial
     :model="items"
     pt:root:class="speed-dial bottom-2 right-2"
-    direction="up" :transitionDelay="80"
+    direction="up"
+    :transitionDelay="80"
     :tooltipOptions="{ position: 'left' }"
   >
     <template #item="{ item, toggleCallback }">
@@ -127,6 +132,6 @@ const items = ref([
 </template>
 <style>
 .p-speeddial.speed-dial {
-  position: fixed ;
-} 
+  position: fixed;
+}
 </style>

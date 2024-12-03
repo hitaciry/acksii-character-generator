@@ -29,41 +29,41 @@
 </template>
 
 <script setup>
-import { ref, defineEmits, defineProps } from 'vue';
-import { rollDice } from '../utils/diceRoller';
-import { useCharacterStore } from '../stores/characterStore'; 
+import { ref, defineEmits, defineProps } from 'vue'
+import { rollDice } from '../utils/diceRoller'
+import { useCharacterStore } from '../stores/characterStore'
 
 // Accept props
 defineProps({
   isOpen: {
     type: Boolean,
-    required: true
-  }
-});
+    required: true,
+  },
+})
 
 // Emit event to inform parent that the state has been toggled
-const emit = defineEmits(['update:isOpen']);
+const emit = defineEmits(['update:isOpen'])
 
-const characterStore = useCharacterStore();
-const rollHistory = characterStore.rollHistory.reverse();
-const input = ref('');
-const result = ref(null);
-const error = ref(null);
+const characterStore = useCharacterStore()
+const rollHistory = characterStore.rollHistory.reverse()
+const input = ref('')
+const result = ref(null)
+const error = ref(null)
 
 const toggleChat = () => {
-  emit('update:isOpen', false); // Emit the updated state to the parent
-};
+  emit('update:isOpen', false) // Emit the updated state to the parent
+}
 
 const rollTheDice = () => {
   try {
-    const { rolls, total } = rollDice(input.value);
-    result.value = `Rolled: ${input.value} - Rolls: ${rolls.join(', ')} (Total: ${total})`;
-    error.value = null;
+    const { rolls, total } = rollDice(input.value)
+    result.value = `Rolled: ${input.value} - Rolls: ${rolls.join(', ')} (Total: ${total})`
+    error.value = null
   } catch (err) {
-    error.value = err.message;
-    result.value = null; // Reset result in case of error
+    error.value = err.message
+    result.value = null // Reset result in case of error
   }
-};
+}
 </script>
 
 <style scoped>
