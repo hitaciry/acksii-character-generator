@@ -2141,7 +2141,7 @@
     }
   },
   "warlock": {
-    "keyAttributes": ["INT", "WIL"],
+    "keyAttribute": "INT and WIL",
     "requirements": "None",
     "hitDice": "1d4",
     "maximumLevel": 14,
@@ -2374,7 +2374,7 @@
     }
   },
   "witch": {
-    "keyAttribute": ["INT", "WIL"],
+    "keyAttribute": "INT and WIL",
     "requirements": "None",
     "hitDice": "1d4",
     "maximumLevel": 14,
